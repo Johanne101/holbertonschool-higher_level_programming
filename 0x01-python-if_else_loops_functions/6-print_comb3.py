@@ -4,4 +4,3 @@ for x in range(0, 10):
         print("{:d}{:d}".format(x, y), end="")
         if  x != 89:
             print(", ", end="")
-print("")
