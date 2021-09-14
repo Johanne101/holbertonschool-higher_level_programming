@@ -12,10 +12,9 @@ It's also a very powerful language
   * He was employed at Google for 7 years and the creator of Python.
   He was also allowed to spend half of his time developing Python 
   while he was employed at Google.
-### Zen Poem
-Zen |
+### Zen Poem |
 ----------- |
-**The Zen of Python, by Tim Peters
+The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -35,7 +34,7 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!**
+Namespaces are one honking great idea -- let's do more of those!
 
 **Other important Facts:**
 * [Programming Paradigm](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)
