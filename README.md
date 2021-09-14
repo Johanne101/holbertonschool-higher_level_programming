@@ -1,11 +1,11 @@
 Welcome to the python world!
 
-##What is python?##
+**What is python?**
 Python is an object-oriented, interpreted language that's easy to use, and
 runs on many operating systems including Windows, Mac OS, Linux and more.
 
 It's named after the cult comedy show...
-##Monty Python's Flying Circus##
+**Monty Python's Flying Circus**
 (not after the snake), and you'll find various refreces to Monty Python
 sketches in the official documentation.
 Python is an easy to learn, powerful programming language.
@@ -16,7 +16,7 @@ more complex types like lists and dicctionaries, that can greatly simplify
 data processing.
 
 Python also supports several programming paradigms, and can be used for,
-#Procedural Programming, Functional Programming and Object Oriented Programming.#
+**Procedural Programming, Functional Programming and Object Oriented Programming**
 Python’s elegant syntax and dynamic typing, together with its interpreted 
 nature, make it an ideal language for scripting and rapid application 
 development in many areas on most platforms.
