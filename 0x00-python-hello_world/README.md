@@ -12,9 +12,9 @@ It's also a very powerful language
   * He was employed at Google for 7 years and the creator of Python.
   He was also allowed to spend half of his time developing Python 
   while he was employed at Google.
-### Zen Poem |
------------ |
-The Zen of Python, by Tim Peters
+### Zen Poem
+----------- | -------------
+**The Zen of Python,** | by Tim Peters
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
