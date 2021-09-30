@@ -33,7 +33,7 @@ class Square:
             raise TypeError(text)
         if type(value[0]) is not int or type(value[1]) is not int:
             raise TypeError(text)
-        elif len(value) != 2:
+        if len(value) != 2:
             raise TypeError(text)
         else:
             self.__position = value
