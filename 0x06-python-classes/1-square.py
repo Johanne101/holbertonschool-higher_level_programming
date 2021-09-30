@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""1. Create a class called 'Square'"""
+"""1. Create a class called 'Square' (module)"""
 
 
 class Square:
-    """2. Ceating a defined Square"""
-    __size
+    """2. Ceating a defined Square class"""
 
-    def __init(self, size):
+    def __init__(self, size):
         """3. Initialize private instance attribute: size."""
         self.__size = size
