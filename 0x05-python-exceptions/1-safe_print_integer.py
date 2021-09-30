@@ -3,8 +3,7 @@
 
 def safe_print_integer(value):
     try:
-        print("{:d}".format(value))
+        str.format("{:d}", value)
         return (True)
     except ValueError:
         return (False)
-
