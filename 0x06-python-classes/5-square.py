@@ -27,6 +27,8 @@ class Square:
         return self.__size**2
 
     def my_print(self):
+        if self.size == 0:
+            print()
         for row in range(self.__size):
             for col in range(self.size):
                 print('#', end="")
