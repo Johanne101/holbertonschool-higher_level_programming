@@ -1,5 +1,6 @@
-# Classes and Objects
------------------------
+Classes and Objects
+======================
+
 ## Background Context
 OOP is a totally new concept for all of you (especially those who think they know about it :)). It’s VERY important that you read at least all the material that is listed bellow (and skip what we recommend you to skip, you will see them later in the curriculum).
 As usual, make sure you type (never copy and paste), test, understand all examples shown in the following links (including those in the video), test again etc. The biggest and most important takeaway of this project is: experiment by yourself OOP, play with it!
@@ -15,18 +16,23 @@ Read or watch the below resources in the order presented.
 * Learn to Program 9 : Object Oriented Programming
 * Python Classes and Objects
 * Object Oriented Programming
+* [Programming Paradigms](https://www.geeksforgeeks.org/programming-paradigms-in-python/)
 
 
 ## Learning Objectives
 -----------------------
 
 ###General:
-
+<p>
 * Why Python programming is awesome
-* What is OOP| Object-Oriented Programming (OOP). 
+* What is OOP| Object-Oriented Programming (OOP).
   * Object-oriented programming (OOP) is a method of structuring a program by bundling related properties and behaviors into individual objects. In this tutorial, you'll learn the basics of object-oriented programming in Python. Conceptually, objects are like the components of a system.
 “first-class everything”
-Python is an objected oriented programming language (OOP), which means that the entire language is built around the notion of objects(or classes). Guido Van Rossum designed the language in accordance with the principle “first-class everything” which means that all the functions, classes, modules, methods and data types all have equal status. Therefore, everything (or almost) in Python is a class.
+* Python is an objected oriented programming language (OOP),
+  * which means that the entire language is built around the notion of objects(or classes).
+  Guido Van Rossum designed the language in accordance with the principle “first-class everything”
+  which means that all the functions, classes, modules, methods and data types all have equal status.
+  Therefore, everything (or almost) in Python is a class.
 * What is a class
   * A class creates a new type where objects are instances of the class. An analogy is that you can have variables of type int which translates to saying that variables that store integers are variables which are instances (objects) of the int class.
 * What is an object and an instance
@@ -45,3 +51,5 @@ Python is an objected oriented programming language (OOP), which means that the 
 * What is the `**__dict__**` of a class and/or instance of a class and what does it contain
 * How does Python find the attributes of an object or class
 * How to use the `getattr` function
+</p>
+
