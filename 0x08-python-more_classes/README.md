@@ -4,8 +4,48 @@ Object Oriented Programming (**OOP**)
 ### Why Python programming is awesome
 
 So there's several different programming paradigms and unitl now
+When we say everything in Python is an object...
+
+> I seriously mean it!
+>> EVERYTHING IN PYTHON ARE OBJECTS!!!!
+
+**Everything.** Even types are implemented as clases.
 
 ### What is OOP
+
+<p>
+
+**Object Oriented Programming** uses classes and methods to provide objects
+that encapsulates both data and the functions that operate on that Data.
+*Method* is just another word for function.
+
+When a function is part of a class in Python we call it a method.
+Now, there is a slight difference between a function and a method
+but writing a method is the same as writing a function.
+**Example:**
+</p>
+
+```
+class Kettle(object):
+	def __init__(self, make, price):
+		self.make = make
+		self.price = price
+		self.on = False
+```
+<p>
+
+Looking at the code above, you can think of a class as a template from which
+objects can be created. So when we create objects of this kettle class, they all
+have a name and a price.
+  >>>*Now they wont have the same name nor the same price*<<<
+Each instance of the class will have it's own values for name and price.
+So as it was mentioned before, classes is like a template from which objects can be
+created and all the objects created from the same class will share the same characteristics.
+
+Now an **instance** is just another name for an object created from a class definition.
+
+</p>
+
 ### “first-class everything”
 ### What is a class
 ### What is an object and an instance
