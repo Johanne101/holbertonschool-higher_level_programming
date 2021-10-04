@@ -17,30 +17,50 @@ Hello World!!!
 > ## The Zen of Python, by Tim Peters
 > 
 >  Beautiful is better than ugly.
+>
 >  Explicit is better than implicit.
+>
 >  Simple is better than complex.
+>
 >  Complex is better than complicated.
+>
 >  Flat is better than nested.
+>
 >  Sparse is better than dense.
+>
 >  Readability counts.
+>
 >  Special cases aren't special enough to break the rules.
+>
 >  Although practicality beats purity.
+>
 >  Errors should never pass silently.
+>
 >  Unless explicitly silenced.
+>
 >  In the face of ambiguity, refuse the temptation to guess.
+>
 >  There should be one-- and preferably only one --obvious way to do it.
+>
 >  Although that way may not be obvious at first unless you're Dutch.
+>
 >  Now is better than never.
+>
 >  Although never is often better than *right* now.
+>
 >  If the implementation is hard to explain, it's a bad idea.
+>
 >  If the implementation is easy to explain, it may be a good idea.
-<p>
+
+
 ***The Zen of Python*** is a collection of ***the 19*** ***"guiding principles"***
 for writing computer programs that influence the design of the Python programming language.
-</p>
+
+
 --------------------
-## What is Python?
+What is Python?
 --------------------
+
 -  Python is an object-orineted, interpreted language that make it easy for us computer nerds use.
 -  It runs on many operating systems but here everything will be operated only in linux.
 -  Python supports basic data types such as:
