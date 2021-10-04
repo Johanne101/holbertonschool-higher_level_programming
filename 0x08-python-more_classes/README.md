@@ -5,13 +5,13 @@ Object Oriented Programming (**OOP**)
 
 So there's several different programming paradigms and unitl now
 When we say everything in Python is an object...
+I seriously mean it!
 
-> I seriously mean it!
 >> EVERYTHING IN PYTHON ARE OBJECTS!!!!
 
-**Everything.** Even types are implemented as clases.
+**Everything...** Even types are implemented as clases.
 
-### What is OOP
+### What is OOP?
 
 <p>
 
@@ -22,10 +22,11 @@ that encapsulates both data and the functions that operate on that Data.
 When a function is part of a class in Python we call it a method.
 Now, there is a slight difference between a function and a method
 but writing a method is the same as writing a function.
-**Example:**
+**Example #1:**
 </p>
 
 ```
+# Here Kettle has been defined as a class
 class Kettle(object):
 	def __init__(self, make, price):
 		self.make = make
@@ -35,19 +36,98 @@ class Kettle(object):
 <p>
 
 Looking at the code above, you can think of a class as a template from which
-objects can be created. So when we create objects of this kettle class, they all
-have a name and a price.
+objects can be created.
+So when we create objects of this kettle class, they all have a name and a price.
+
   >>>*Now they wont have the same name nor the same price*<<<
+
 Each instance of the class will have it's own values for name and price.
 So as it was mentioned before, classes is like a template from which objects can be
 created and all the objects created from the same class will share the same characteristics.
 
 Now an **instance** is just another name for an object created from a class definition.
+- So *if we create a kettle called* **Kenwood**;
+  * Then Kenwood will be an **instance** of the kettle class.
+- You can also say that **Kenwood**
+  * is an object of type kettle.
+**Example #2.a:**
+</p>
+
+```
+# Example of creating an instance of the kettle class
+# And I gave it the name 'Kenwood'
+kenwood = Kettle("Kenwood", 8.99)
+print(kenwood.make)
+print(kenwood.price)
+
+
+# we can adjust the price can be $12.75
+kenwood.price = 12.75
+print(kenwood.price)
+```
+
+
+**Example #2.b: Another instance is created in the code below and this time it's called Hamilton**
+
+```
+hamilton = ("Hamilton", 14.55)
+```
+
+<p>
+* Each *instance* has its own values for name and price.
+* And their accessed byt using `.` annotations
+  * So we type in;
+    * `Kenwood.price` or
+	* `Hamilton.make`
+	to access that information.
 
 </p>
 
 ### “first-class everything”
 ### What is a class
+
+<p>
+A good analogy here is plans for building a house...
+The plan itself just describes what the house will look like.
+It's size, how many rooms it will have, etc. This is similar the *plan* to the *class*.
+Which is just a template for creating objects.
+
+* Once you have a plan, you can then create as many houses as you want based on that plan.
+* And the same is true of classes once a class has been defined...
+
+>> "like how kettle class that we defined on example #1 above"
+
+* We can then create as many instances of that classes as we want
+
+**Be AWARE...**
+Just as you can't do anything with the house plan other than build houses based on it.
+You can't relly do anything with the class, other than create instances of it.
+Once the instances have been created you can then call their methods, and access their variables.
+</p>
+
+**Input:**
+```
+print("Models: {} = {}, {} = {}".format(kenwood.make, kenwood.price, hamilton.make, hamilton.price))
+```
+
+**Output**
+```
+Kenwood
+8.99
+12.75
+Models: Kenwood = 12.75, Hamilton = 14.55
+```
+so the code above has retrieved the values out of each instance of the 2 kettle objects
+that we have created.
+The parameters in the format method above are the make, and price **data attributes** of the;
+  * Kenwood, and
+  * Hamilton objects.
+
+> Before we have been used to talking about variables, but...
+> when a variable is bound to an instance of a class it's refered to as a
+>> **data attribute**
+
+
 ### What is an object and an instance
 ### What is the difference between a class and an object or instance
 ### What is an attribute
