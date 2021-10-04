@@ -75,7 +75,9 @@ out2 = plustwo(3)
 print(out1, out2)
 ```
 </p>
+
 ### Modules:
+
 **First, what is a Module?**
 <p>
 
@@ -107,6 +109,7 @@ mymodule.greeting("Alex")
 
 ### Built-in Functions:
 
+<p>
 - How to use the built-in function `dir()`?
 
 `dir()` is a powerful inbuilt function in Python3,
@@ -134,24 +137,31 @@ as it aims to produce the most relevant one, rather than the complete informatio
   * If no parameters are passed it returns a list of names in the current local scope
 
 - How to prevent code in your script from being executed when imported
-<p>
+
 To stop code execution in Python you first need to import the sys object.
-After this you can then call the exit() method to stop the program running.
+After this you can then call the `exit()` method to stop the program running.
 It is the most reliable, cross-platform way of stopping code execution.
 **SYNTAX EXAMPLE:**
+</p>
+
 ```
 import sys
 sys.exit()
 
 ```
-</p>
 
 #### Command Line Arguments:
 <p>
+
 - How to use command line arguments with your Python programs
 Python provides a getopt module that helps you parse command-line options and arguments.
+</p>
 
-```$ python test.py arg1 arg2 arg3```
+```
+$ python test.py arg1 arg2 arg3
+```
+
+<p>
 
 The Python sys module provides access to any command-line arguments via the `sys.argv`.
 This serves two purposes:
@@ -160,6 +170,8 @@ This serves two purposes:
   * len(sys.argv) is the number of command-line arguments.
 
 Here is `sys.argv[0]` is the program as an example:
+</p>
+
 ```
 #!/usr/bin/python
 
@@ -169,7 +181,6 @@ print 'Number of arguments:', len(sys.argv), 'arguments.'
 print 'Argument List:', str(sys.argv)
 
 ```
-</p>
 
 Requirements
 -------------
