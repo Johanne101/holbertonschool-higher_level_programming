@@ -1,41 +1,76 @@
 Hello World!!!
+==================
 
-One thing to get you started programming with python,
-make sure to search and understand the following:
+>  One thing to get you started programming with python,
+>  make sure to search and understand the following:
 
 **General**
-* Why Python programming is awesome | Despite it's easy use,
-It's also a very powerful language
-  * I'ts one of the 3 "official" languages at Google as an example.
-* Who created Python | Guido van Rossum
-* Who is Guido van Rossum |
+* Why Python programming is awesome
+  1. Despite it's easy use, It's also a very powerful language
+  2. I'ts one of the 3 "official" languages at Google as an example.
+* Guido van Rossum is the creator of the Python language
+* More about Guido van Rossum:
   * He was employed at Google for 7 years and the creator of Python.
-  He was also allowed to spend half of his time developing Python 
-  while he was employed at Google.
-### Zen Poem
-**The Zen of Python,** | by Tim Peters
+  * He was also allowed to spend half of his time developing Python 
+    * Even while he was employed at Google.
 
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
+> ## The Zen of Python, by Tim Peters
+> 
+>  Beautiful is better than ugly.
+>  Explicit is better than implicit.
+>  Simple is better than complex.
+>  Complex is better than complicated.
+>  Flat is better than nested.
+>  Sparse is better than dense.
+>  Readability counts.
+>  Special cases aren't special enough to break the rules.
+>  Although practicality beats purity.
+>  Errors should never pass silently.
+>  Unless explicitly silenced.
+>  In the face of ambiguity, refuse the temptation to guess.
+>  There should be one-- and preferably only one --obvious way to do it.
+>  Although that way may not be obvious at first unless you're Dutch.
+>  Now is better than never.
+>  Although never is often better than *right* now.
+>  If the implementation is hard to explain, it's a bad idea.
+>  If the implementation is easy to explain, it may be a good idea.
+<p>
+***The Zen of Python*** is a collection of ***the 19*** ***"guiding principles"***
+for writing computer programs that influence the design of the Python programming language.
+</p>
+--------------------
+## What is Python?
+--------------------
+-  Python is an object-orineted, interpreted language that make it easy for us computer nerds use.
+-  It runs on many operating systems but here everything will be operated only in linux.
+-  Python supports basic data types such as:
+    * number
+    * strings, (and more complex types like)
+    * lists, and
+    * dictionaries
+<p>
+These can greatly simplify data processing.
 
-**Other important Facts:**
-* [Programming Paradigm](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)
+Python also supports several programming paradigms, and can be used for
+***Procedural Programming, Functional Programming, and Object Oriented Programming.***
+
+</p>
+
+> **Fun Fact**:
+> 
+> "Python is named after the cult comedy show
+> Monty Python's Flying Circus,(Not after the snake...!)
+> 
+> and you can find multiple references to Monty Python in the official documentation."
 
 
+**References to read ando/or watch:**
+1. [Programming Paradigm](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)
+2. [The Python tutorial](https://docs.python.org/3/tutorial/index.html):(only the first three chapters below)
+3. [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)
+4. [Using the Python Interpreter](https://docs.python.org/3/tutorial/interpreter.html)
+5. [An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html):(Read up until “3.1.2. Strings” included)
+6. [How To Use String Formatters in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3)
+7. [Learn to Program - with Youtube](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
+8. [Pycodestyle – Style Guide for Python Code](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
+9. [Data Structures](https://docs.google.com/document/d/1J76h1U-Wr9UuPt8r-vJzuH2Kz0bsaUtIbXVKFtP9mxw/edit#heading=h.eas149mgalrd): Lists, Tuples
