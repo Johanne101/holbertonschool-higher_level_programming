@@ -50,10 +50,15 @@ class Rectangle:
         else:
             return ((self.__height + self.__width) * 2)
 
-        def __str__(self):
-            """ The method will print the rectangle
-                with # character
-            """
+    def __str__(self):
+        """ The method will print the rectangle
+            with # character
+        """
+        my_object = ""
         if self.height == 0 or self.width == 0:
-            return ("")
-        return (("#" * self.__width + "\n") * self.__height)[:-1]
+            return (my_object)
+        for y in range(self.__height):
+            for x in range(self.__width):
+                my_object += "#"
+            my_object += "\n"
+        return my_object[:-1]
