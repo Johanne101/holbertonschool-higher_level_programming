@@ -127,6 +127,16 @@ The parameters in the format method above are the make, and price **data attribu
 > when a variable is bound to an instance of a class it's refered to as a
 >> **data attribute**
 
+## Learn your OOP Terms:
+
+|Term        |What is it? |
+|:-----------|-----------:|
+|Class       |template for creating objects. All objects created using the same class will have the same characteristics. |
+|Object      |an instance of a class. |
+|Instantiate |create an instance of a class. |
+|Method      |a function defined in a class. |
+|Attribute   |a variable bound to an instance of a class. |
+
 
 ### What is an object and an instance
 ### What is the difference between a class and an object or instance
@@ -153,4 +163,7 @@ The parameters in the format method above are the make, and price **data attribu
 
 Resources
 -------------
-- [Encapsulation](https://www.geeksforgeeks.org/encapsulation-in-python/ )
+- [Encapsulation](https://www.geeksforgeeks.org/encapsulation-in-python/)
+- [Creat an empty Class](https://www.foxinfotech.in/2018/09/how-to-create-empty-class-in-python.html#:~:text=In%20Python%2C%20you%20can%20create,it%20does%20nothing%20when%20executes.)
+- [Define a class](http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_II.html)
+- 
