@@ -1,7 +1,4 @@
- 
-=============================
-
-Everything is object
+EEVERYTHING IS OBJECT(S)
 =============================
 
 REMEMBER... in the past project how everything in python is object...?
@@ -13,9 +10,12 @@ REMEMBER... in the past project how everything in python is object...?
 
 Why Python programming is awesome
 
-		Because it pays the BILL$, and it's very useful to combine data and the
-		data processes that on that data into into objects!
+		Because it pays the BILL$,
+		Python is very a very useful object oriented language
+		that aims to combine data, and the data processes,
+		that act on that data into objects!
 		**INCEPTION**
+
 
 What is an object
 
@@ -50,7 +50,7 @@ Resources
 
 - [9.10. Objects and values](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#objects-and-values)
 - [9.11. Aliasing](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#aliasing)
-- [Immutable vs mutable types](https://stackoverflow.com/questions/8056130/immutable-vs-mutable-types) :Stack**overflow** explained examples
-- [Mutation](http://composingprograms.com/pages/24-mutable-data.html#sequence-objects) :Only chapter *Sequence Objects*
+- [Immutable vs mutable types](https://stackoverflow.com/questions/8056130/immutable-vs-mutable-types) : Stack**overflow** explained examples
+- [Mutation](http://composingprograms.com/pages/24-mutable-data.html#sequence-objects) : Only chapter *Sequence Objects*
 - [9.12. Cloning lists](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#cloning-lists)
-- [Python tuples](http://radar.oreilly.com/2014/10/python-tuples-immutable-but-potentially-changing.html) :immutable but potentially changing
+- [Python tuples](http://radar.oreilly.com/2014/10/python-tuples-immutable-but-potentially-changing.html) : Immutable but potentially changing
