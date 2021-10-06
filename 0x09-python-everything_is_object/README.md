@@ -17,6 +17,20 @@ Why Python programming is awesome
 		**INCEPTION**
 
 
+-------------------------------
+Python3: Mutable, Immutable... everything is object!
+mandatory
+Write a blog post about everything you just learned / this project is covering. Your blog post should be articulated this way (one paragraph per item):
+
+introduction
+id and type
+mutable objects
+immutable objects
+why does it matter and how differently does Python treat mutable and immutable objects
+how arguments are passed to functions and what does that imply for mutable and immutable objects
+--------------------------------
+
+
 What is an object
 
 What is the difference between a class and an object or instance
