@@ -1,11 +1,9 @@
-
-Everything is object
+ 
 =============================
-=============================
+Everything is object 🪃 
 =============================
 
-
- REMEMBER... in the past project how everything in python is object...?
+REMEMBER... in the past project how everything in python is object...?
 | YOUR'E WELCOME!!! ;) |
 |:-----:|
 
@@ -13,8 +11,9 @@ Everything is object
 ## General:
 
 Why Python programming is awesome
-		* Because it pays the BILL$, and it's very useful to combine data and the data processes that on that data into into objects!
-		INCEPTION *
+
+		Because it pays the BILL$, and it's very useful to combine data and the data processes that on that data into into objects!
+		**INCEPTION**
 
 What is an object
 What is the difference between a class and an object or instance
