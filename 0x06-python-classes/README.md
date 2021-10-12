@@ -21,14 +21,10 @@ Make sure you read everything in the following paragraphs:
   * [First-class Everything](https://www.python-course.eu/python3_object_oriented_programming.php#OOP-in-Python),
   * [A Minimal Class in Python](https://www.python-course.eu/python3_object_oriented_programming.php#A-Minimal-Class-in-Python),
   * [Attributes](https://www.python-course.eu/python3_object_oriented_programming.php#Attributes)
-    * [Public
-	* Protected
-	* Private](https://www.python-course.eu/python3_object_oriented_programming.php#Public,---Protected-,-and-Private-Attributes)
+    * [Public, Protected, Private](https://www.python-course.eu/python3_object_oriented_programming.php#Public,---Protected-,-and-Private-Attributes)
   * [Methods](https://www.python-course.eu/python3_object_oriented_programming.php#Methods),
     * [The `__init__` Method](https://www.python-course.eu/python3_object_oriented_programming.php#The-__init__-Method),
-  * [Data Abstraction,
-    * Data Encapsulation, and
-    * Information Hiding](https://www.python-course.eu/python3_object_oriented_programming.php#Data-Abstraction,-Data-Encapsulation,-and-Information-Hiding)
+  * [Data Abstraction, Data Encapsulation, and Information Hiding](https://www.python-course.eu/python3_object_oriented_programming.php#Data-Abstraction,-Data-Encapsulation,-and-Information-Hiding)
 
 * [Properties vs. Getters and Setters](https://www.python-course.eu/python3_properties.php)
   * [Usage of private and public attributes, getters and setters](https://www.python-course.eu/python3_properties.php#Public-instead-of-Private-Attributes)
