@@ -135,9 +135,7 @@ There are a few rules for variable names:
 
 |:Indexing: |:Slicing:|
 |-----------|---------|
-| means referring to an element of an iterable by its position within
-the iterable.| “Slicing” means getting a subset of elements from an
-iterable based on their indices.|
+| means referring to an element of an iterable by its position within the iterable.| “Slicing” means getting a subset of elements from an iterable based on their indices.|
 
 * Learn the official Python coding style and
 how to check your code with pycodestyle [here](https://www.python.org/dev/peps/pep-0008/)
