@@ -1,11 +1,7 @@
 Import & modules
 ================
 
-## Learning Objectives
-
-**General:**
-
-### Why Python programming is awesome
+**Why Python programming is awesome**
   * Despite it's easy use, It's also a very powerful language
   * I'ts one of the 3 "official" languages at Google as an example.
 
