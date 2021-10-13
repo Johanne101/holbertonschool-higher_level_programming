@@ -120,34 +120,37 @@ print('We can even include "quotes" in strings')
 print("concatination str1" + "concatination str2")
 ```
   * 'hello' is the same as "hello".
-  * You can display a string literal with the print() function:
+  * You can display a string literal with the `print()` function
 </p>
 
 ### Variables and Types:
 <p>
 There are a few rules for variable names:
   * variable names must start with either **UPPER** or **lower** case, or an underscore_chacaracter.
+
   * They contain letters, numbers or underscore characters (but cannot begin with a number).
+
   * Python variables are case sensitive, so **greeting** and **Greeting** would refer to 2 different variables.
+  
   * Variables are created when they are first attached to a value, using`=`.
 
-* What are indexing and slicing in Python
+### Indexing vs. Slicing in Python
 
 |:Indexing: |:Slicing:|
 |-----------|---------|
 | means referring to an element of an iterable by its position within the iterable.| “Slicing” means getting a subset of elements from an iterable based on their indices.|
 
-* Learn the official Python coding style and
-how to check your code with pycodestyle [here](https://www.python.org/dev/peps/pep-0008/)
+**Learn the official Python coding style and
+how to check your code with pycodestyle** [here](https://www.python.org/dev/peps/pep-0008/)
 
 
 
 **References to read ando/or watch:**
 1. [Programming Paradigm](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)
-2. [The Python tutorial](https://docs.python.org/3/tutorial/index.html):(only the first three chapters below)
+2. [The Python tutorial](https://docs.python.org/3/tutorial/index.html): (only the first three chapters below)
 3. [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)
 4. [Using the Python Interpreter](https://docs.python.org/3/tutorial/interpreter.html)
-5. [An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html):(Read up until “3.1.2. Strings” included)
+5. [An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html): (Read up until “3.1.2. Strings” included)
 6. [How To Use String Formatters in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3)
 7. [Learn to Program - with Youtube](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
 8. [Pycodestyle – Style Guide for Python Code](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
