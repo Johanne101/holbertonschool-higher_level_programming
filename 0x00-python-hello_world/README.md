@@ -1,11 +1,6 @@
 Hello World!!!
 ==================
-
->  One thing to get you started programming with python,
->  make sure to search and understand the following:
-
-**General**
-* Why Python programming is awesome
+**Why Python programming is awesome**
   1. Despite it's easy use, It's also a very powerful language
   2. I'ts one of the 3 "official" languages at Google as an example.
 * Guido van Rossum is the creator of the Python language
@@ -13,49 +8,6 @@ Hello World!!!
   * He was employed at Google for 7 years and the creator of Python.
   * He was also allowed to spend half of his time developing Python 
     * Even while he was employed at Google.
-
-> ## The Zen of Python, by Tim Peters
-> 
->  Beautiful is better than ugly.
->
->  Explicit is better than implicit.
->
->  Simple is better than complex.
->
->  Complex is better than complicated.
->
->  Flat is better than nested.
->
->  Sparse is better than dense.
->
->  Readability counts.
->
->  Special cases aren't special enough to break the rules.
->
->  Although practicality beats purity.
->
->  Errors should never pass silently.
->
->  Unless explicitly silenced.
->
->  In the face of ambiguity, refuse the temptation to guess.
->
->  There should be one-- and preferably only one --obvious way to do it.
->
->  Although that way may not be obvious at first unless you're Dutch.
->
->  Now is better than never.
->
->  Although never is often better than *right* now.
->
->  If the implementation is hard to explain, it's a bad idea.
->
->  If the implementation is easy to explain, it may be a good idea.
-
-
-***The Zen of Python*** is a collection of ***the 19*** ***"guiding principles"***
-for writing computer programs that influence the design of the Python programming language.
-
 
 --------------------
 What is Python?
@@ -83,6 +35,70 @@ Python also supports several programming paradigms, and can be used for
 > 
 > and you can find multiple references to Monty Python in the official documentation."
 
+
+## The Zen of Python
+
+**The collection of *19 "guiding principles"* for python:**
+
+```
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+```
+
+## How to use the Python interpreter:
+
+<p>
+The most straightforward way to start talking to Python is in an interactive
+***Read-Eval-Print Loop (REPL)*** environment.
+
+That simply means starting up the interpreter and typing commands to it directly
+
+  * **R**eads the command you enter
+  * **E**valuates and executes the command
+  * **P**rints the output (if any) to the console
+  * **L**oops back and repeats the process
+
+One exception to the first line rule is when the source code starts with a *UNIX* “shebang” line.
+In this case, the encoding declaration should be added as the second line of the file.
+For example:
+
+```
+  #!/usr/bin/env python3
+```
+</p>
+
+* How to print text and variables using print
+  * Use the `print()` Statement to Print a Variable in Python.
+  * Use a Comma `,` to Separate the Variables and Print Them.
+  * Use the String Formatting With the Help of %
+  * Use the String Formatting With the Help of {}
+  * Use the + Operator to Separate Variables in the print Statement
+
+```
+ #Python3 code
+ print('Hello, Welcome Nerd!!!')
+```
+
 ### Strings:
 <p>
 
@@ -106,6 +122,7 @@ print("concatination str1" + "concatination str2")
   * 'hello' is the same as "hello".
   * You can display a string literal with the print() function:
 </p>
+
 ### Variables and Types:
 <p>
 There are a few rules for variable names:
@@ -114,12 +131,18 @@ There are a few rules for variable names:
   * Python variables are case sensitive, so **greeting** and **Greeting** would refer to 2 different variables.
   * Variables are created when they are first attached to a value, using`=`.
 
-* What are indexing and slicing in Python | “Indexing”:
-means referring to an element of an iterable by its position within
-the iterable. “Slicing” means getting a subset of elements from an
-iterable based on their indices.
-* What is the official Python coding style and
-how to check your code with pycodestyle
+* What are indexing and slicing in Python
+
+|:Indexing: |:Slicing:|
+|-----------|---------|
+| means referring to an element of an iterable by its position within
+the iterable.| “Slicing” means getting a subset of elements from an
+iterable based on their indices.|
+
+* Learn the official Python coding style and
+how to check your code with pycodestyle [here](https://www.python.org/dev/peps/pep-0008/)
+
+
 
 **References to read ando/or watch:**
 1. [Programming Paradigm](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)
