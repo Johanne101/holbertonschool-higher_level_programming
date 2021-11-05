@@ -5,5 +5,5 @@ if __name__ == "__main__":
     total = 0
 
     for result in argv[1:]:
-        sum += int((result))
+        total += int((result))
     print(total)
