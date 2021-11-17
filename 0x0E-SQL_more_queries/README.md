@@ -1,26 +1,27 @@
 SQL - More queries
 ===================
 
-##**General**
+##General
 
 * How to create a new MySQL user
 
-<p>
 Here is an example making a new user within the MySQL shell:
+
 ```
 CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 
 ```
-</p>
 
 * How to manage privileges for a user to a database or table
 
 <p>
 The first thing to do providing a user with access to the information they will need.
+
 ```
 GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 
 ```
+
 It's even possible to give only read access to a database to a user and more.
 
 * Here is a short list of other common possible permissions that users can enjoy.
@@ -35,6 +36,7 @@ It's even possible to give only read access to a database to a user and more.
 |SELECT| allows them to use the SELECT command to read through databases|
 |UPDATE| allow them to update table rows|
 |GRANT OPTION| allows them to grant or remove other users’ privileges|
+
 </p>
 
 * What’s a [PRIMARY KEY](https://www.mysqltutorial.org/mysql-primary-key/)
@@ -84,11 +86,14 @@ mysql> INSERT INTO People VALUES(1, 'Hanks', 'Robert', 'New York');
 Query OK, 1 row affected (0.00 sec)
 
 ```
+
   * second row output
+
 ```
   mysql> INSERT INTO People VALUES(1, NULL, 'Marianne', 'Chicago');
 ERROR 1048 (23000): Column 'LastName' cannot be null
 ```
+
 </p>
 
 * How to retrieve datas from multiple tables in one request
@@ -97,10 +102,12 @@ ERROR 1048 (23000): Column 'LastName' cannot be null
 <p>
 Selecting multiple tables using JOIN (cross join)
 Example of an implicit cross join:
+
 ```
 SELECT *
 FROM employee, department;
 ```
+
 A SELECT statement begins with the SELECT keyword and is used to retrieve information from MySQL database tables. You must specify the table name to fetch data from—using the FROM keyword—and one or more columns that you want to retrieve from that table.
 Retrieving Multiple Columns
 using simple SELECT statement, from an element of table.
@@ -111,6 +118,7 @@ after the SELECT keyword, separating them with a comma.
 mysql> SELECT name, price
     -> FROM products;
 ```
+
 </p>
 
 * What are subqueries
@@ -124,6 +132,7 @@ Notice that this query below returns a single column and a single row.
 ```
 SELECT * FROM table_1 WHERE column1 = (SELECT column1 FROM table_2);
 ```
+
 </p>
 
 * What are JOIN and UNION
