@@ -138,8 +138,9 @@ SELECT * FROM table_1 WHERE column1 = (SELECT column1 FROM table_2);
 * What are JOIN and UNION
 
 <p>
-||**JOIN**|**UNION**|
-|:--:|:--:|:-------:|
+
+| |**JOIN**|**UNION**|
+|:--:|:--:|:--:|
 |Def.|corresponding to a join operation in relational algebra – combines columns from one or more tables into a new table.|Combines the results of two SQL queries into a single table of all matching rows. The two queries must result in the same number of columns and compatible data types in order to unite.|
 |**TYPES**|INNER, LEFT, LEFT OUTER, RIGHT OUTER, FULL OUTER, FULL INNER, TOP and CROSS|UNION, INTERSECT, and EXCEPT|
 
