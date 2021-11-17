@@ -1,9 +1,9 @@
 SQL - More queries
 ===================
 
-##General
+## General
 
-* How to create a new MySQL user
+* Creating a new MySQL user
 
 Here is an example making a new user within the MySQL shell:
 
@@ -96,7 +96,7 @@ ERROR 1048 (23000): Column 'LastName' cannot be null
 
 </p>
 
-* How to retrieve datas from multiple tables in one request
+### Retrieving data from multiple tables in one request
 
 [Joins and Unions](https://stackoverflow.com/questions/12475850/sql-query-return-data-from-multiple-tables/12475851#12475851)
 <p>
@@ -146,7 +146,8 @@ SELECT * FROM table_1 WHERE column1 = (SELECT column1 FROM table_2);
 
 </p>
 
-###What is...?
+### What is...?
+
 |DCL||
 |:--:|:--:|
 |Data ControlLanguage|
