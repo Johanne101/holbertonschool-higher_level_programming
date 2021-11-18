@@ -16,6 +16,8 @@ CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 
 <p>
 The first thing to do providing a user with access to the information they will need.
+Global privileges apply to all databases in a MySQL Server.
+To assign global privileges, you use the *.* syntax, for example:
 
 ```
 GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
