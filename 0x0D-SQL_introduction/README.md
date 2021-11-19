@@ -1,6 +1,16 @@
 SQL - Introduction
 ===================
 
+Understand concepts:
+
+- |Statement|Conditions|Data Types|Operators|Description|Syntax Example|
+- |:-------:|:--------:|:--------:|--------:|:---------:|--------------|
+- |UPDATE ||||||
+- |DELETE |||||`DELETE FROM` table_name `WHERE` condition;|
+- |SELECT |||||stx|
+- |ALIAS|||||stx|
+
+
 ## General
 
 * What’s a database
@@ -82,9 +92,11 @@ CREATE TABLE <table name> (
 <attribute name n> <data type n>);
 
 ```
+
 #Alter
 The Alter table is frequently used to specify primary and foreign key contraints, and
-make onther modifications to the table structure.
+make onther modifications to the table structure
+
 ```
 ALTER TABLE <table name>
 ADD CONSTRAINT <constraint name> PRIMARY KEY (<attribute list>);
@@ -137,7 +149,7 @@ WHERE emp_id =2;
 
 ```
 
-**DELETE**
+[**DELETE**](https://www.w3schools.com/mysql/mysql_delete.asp)
 
 ```
 DELETE FROM Table_name
@@ -156,6 +168,19 @@ Also a subquary is a query that is nested inside a SELECT, INSERT, UPDATE, or DE
 
 MySQL has many built-in functions/stored program and can be used to
 pass parameters into and then return a value. wheather string, numeric, date, and some advanced functions in MySQL.
+
+
+|**EXAMPLES**|**STATEMENT**|Description|
+|------------|:-----------:|-----------|
+|[UPDATE SCORE](https://www.mysqltutorial.org/mysql-update-data.aspx)| UPDATE| In this UPDATE statement: 1. The WHERE clause specifies the row with employee number 1056 will be updated. 2. The SET clause sets the value of the email column to the new email.|
+|[AVE()](https://www.mysqltutorial.org/mysql-avg/)|||
+|[ORDER COUNT()](https://www.mysqltutorial.org/mysql-alias/)|||
+|[ALIAS](https://www.mysqltutorial.org/mysql-alias/)|||
+
+
+----------------------------------------
+
+
 
 Resources
 ==========
