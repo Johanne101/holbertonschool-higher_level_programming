@@ -132,7 +132,6 @@ emp_Surname VARCHAR(100),
 PRIMARY KEY (emp_id)
 );
 INSERT INTO emp (emp_id,emp_Firstname,emp_Surname) VALUES (2, 'dick', 'cena');
-
 ```
 
 **UPDATE**
@@ -178,9 +177,24 @@ pass parameters into and then return a value. wheather string, numeric, date, an
 |[ALIAS](https://www.mysqltutorial.org/mysql-alias/)|||
 
 
+----------------------------------------------------------------
+
+##[Sorting and Filtering](https://www.sqlshack.com/learn-mysql-sorting-and-filtering-data-in-a-table/)
+
+use cases of the WHERE clause and plan to cover the following use cases:
+
+1. The WHERE clause with an equal operator
+2. The WHERE clause with AND, OR, and BETWEEN operators
+3. The WHERE clause with LIKE and IN operators
+4. The WHERE clause with comparison operators
+
 ----------------------------------------
 
+###How to convert a MySQL database to UTF-8 encoding
 
+```
+ALTER DATABASE DatabaseName CHARACTER SET utf8;
+```
 
 Resources
 ==========
@@ -194,7 +208,7 @@ Resources
 * [SQL technique: functions](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/functions.php)
 * [SQL technique: subqueries](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php)
 * [What makes the big difference between a backtick and an apostrophe?](https://stackoverflow.com/questions/29402361/what-makes-the-big-difference-between-a-backtick-and-an-apostrophe/29402458)
-* [MySQL Cheat Sheet](https://intellipaat.com/mediaFiles/2019/02/SQL-Commands-Cheat-Sheet.pdf)
+
 * [MySQL 8.0 SQL Statement Syntax](https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html)
 * [Raw SQL in a Rails project](https://web.archive.org/web/20181124213655/http://gmile.me:80/raw-sql-in-a-rails-project/)
 * [SELECT example](https://dyclassroom.com/mysql/mysql-select-from-table)
@@ -203,4 +217,8 @@ Resources
 * [MySQL functions](https://www.techonthenet.com/mysql/functions.php)
 * [What is a relational Database](https://www.oracle.com/database/what-is-a-relational-database/)
   * [moreover](https://duckduckgo.com/?q=what%27s+a+relational+database&t=brave&ia=web)
+
+***MySQL Cheat Sheets:***
+* [devhints.io](https://devhints.io/mysql)
+* [MySQL Cheat Sheet](https://intellipaat.com/mediaFiles/2019/02/SQL-Commands-Cheat-Sheet.pdf)
 
