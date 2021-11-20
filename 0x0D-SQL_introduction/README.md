@@ -3,13 +3,19 @@ SQL - Introduction
 
 Understand concepts:
 
-- |Statement|Conditions|Data Types|Operators|Description|Syntax Example|
-- |:-------:|:--------:|:--------:|--------:|:---------:|--------------|
-- |UPDATE ||||||
-- |DELETE |||||`DELETE FROM` table_name `WHERE` condition;|
-- |SELECT |||||stx|
-- |ALIAS|||||stx|
-
+|**Command**|Conditions|Data Types|Operators|**Description**|Syntax Example|
+|:-------:|:--------:|:--------:|--------:|:---------:|--------------|
+|INSERT INTO|c|dt|opr|inserts new data into a database|stx|
+|UPDATE ||||update data in your database||
+|DELETE ||||deletes data from your database|`DROP DATABASE` dbName;|
+|SELECT ||||It's a statement used to fetch/choose specific data from your database|stx|
+|CREATE DATABASE||||generate a new database||
+|ALTER DATABASE||||modify an existing database||
+|CREATE TABLE||||create a new table in a database||
+|ALTER TABLE||||change the selected table||
+|DROP TABLE||||delete a table||
+|CREATE INDEX||||create an index (search key for all the info stored)||
+|DROP INDEX||||delete an index||
 
 ## General
 
@@ -61,14 +67,14 @@ ref:
 
 * How to create a database in MySQL
 
-#The CREATE DATABASE statement is used to create a new SQL database.
+# The CREATE DATABASE statement is used to create a new SQL database.
 
 Syntax looks like this...
 
 ```
 CREATE DATABASE databasename;
 
-'''example'''
+-- #example
 
 CREATE DATABASE testDB;
 ```
@@ -78,13 +84,15 @@ CREATE DATABASE testDB;
 |:DDL:|:DML|
 |-----|----|
 |**Data Definition Language**| **Data Manipulation Language**|
-|are used to build and modify the structure of your tables and other objects in the database.|used to work with the data in tables. When you are connected to most multi-user databases (whether in a client program or by a connection from a Web page script)|
+|are used to ***build and modify*** the ***structure of*** your ***tables*** and other ***objects*** in the database.|used to work with the data in tables.|
 
 
 * How to `CREATE` or `ALTER` a table
 
-#Create
+# Create
+
 The statement 'CREATE' can be used to specify a table, or constraints key constraints.
+
 ```
 CREATE TABLE <table name> (
 <attribute name 1> <data type 1>,
@@ -93,7 +101,8 @@ CREATE TABLE <table name> (
 
 ```
 
-#Alter
+# Alter
+
 The Alter table is frequently used to specify primary and foreign key contraints, and
 make onther modifications to the table structure
 
@@ -102,10 +111,10 @@ ALTER TABLE <table name>
 ADD CONSTRAINT <constraint name> PRIMARY KEY (<attribute list>);
 ```
 
-###[SELECT](https://www.w3schools.com/mysql/mysql_select.asp)
+### [SELECT](https://www.w3schools.com/mysql/mysql_select.asp)
 
 To explain how to `SELECT` data from a table, we will use the
-`**SELECT** * FROM table_name` command to select all the columns of a given table.
+`**SELECT**` * `FROM table_name` command to select all the columns of a given table.
 
 for example; here we are selecting all the columns/data of the employee table.
 
@@ -179,7 +188,7 @@ pass parameters into and then return a value. wheather string, numeric, date, an
 
 ----------------------------------------------------------------
 
-##[Sorting and Filtering](https://www.sqlshack.com/learn-mysql-sorting-and-filtering-data-in-a-table/)
+## [Sorting and Filtering](https://www.sqlshack.com/learn-mysql-sorting-and-filtering-data-in-a-table/)
 
 use cases of the WHERE clause and plan to cover the following use cases:
 
@@ -190,7 +199,7 @@ use cases of the WHERE clause and plan to cover the following use cases:
 
 ----------------------------------------
 
-###How to convert a MySQL database to UTF-8 encoding
+### How to convert a MySQL database to UTF-8 encoding
 
 ```
 ALTER DATABASE DatabaseName CHARACTER SET utf8;
