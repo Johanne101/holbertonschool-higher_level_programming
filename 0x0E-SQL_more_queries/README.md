@@ -120,7 +120,6 @@ after the SELECT keyword, separating them with a comma.
 mysql> SELECT name, price
     -> FROM products;
 ```
-
 </p>
 
 * What are subqueries
@@ -141,18 +140,86 @@ SELECT * FROM table_1 WHERE column1 = (SELECT column1 FROM table_2);
 
 <p>
 
-| |**JOIN**|**UNION**|
+| |[JOIN](https://tableplus.com/blog/2018/09/a-beginners-guide-to-seven-types-of-sql-joins.html)|**UNION**|
 |:--:|:--:|:--:|
 |Def.|corresponding to a join operation in relational algebra – combines columns from one or more tables into a new table.|Combines the results of two SQL queries into a single table of all matching rows. The two queries must result in the same number of columns and compatible data types in order to unite.|
 |**TYPES**|INNER, LEFT, LEFT OUTER, RIGHT OUTER, FULL OUTER, FULL INNER, TOP and CROSS|UNION, INTERSECT, and EXCEPT|
 
+---------------
+***JOIN:***
+
+* [INNER JOIN](https://www.mysqltutorial.org/mysql-inner-join.aspx): Examples
 </p>
+
+=========
+Importing the database dump from hbtn_0d_tvshows to your MySQL server:[download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql)
+
+1. Copy/paste download link using:
+  * `wget` command (used to download content from "World Wide Web" and "get")
+
+```
+mr.mt@ubuntuserver:~/home-directory/destined-directory$ wget https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql
+
+--2021-11-23 20:20:24--  https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql
+Resolving s3.amazonaws.com (s3.amazonaws.com)... 52.216.186.69
+Connecting to s3.amazonaws.com (s3.amazonaws.com)|52.216.186.69|:443... 
+connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3854 (3.8K) []
+Saving to: ‘hbtn_0d_tvshows.sql’
+
+hbtn_0d_tvshows.sql                     100%[=============================================================================>]   3.76K  --.-KB/s    in 0s      
+
+2021-11-23 20:20:24 (206 MB/s) - ‘hbtn_0d_tvshows.sql’ saved [3854/3854]
+```
+> The system should return with Query OK, 1 row affected (0.00 sec). Note: The command won’t run if the semicolon isn’t entered at the end of the command.
+
+2. Launch MySQL shell:
+  1. CREATE DATABASES  empty_database_name;
+
+```
+mysql> CREATE DATABASE hbtn_0d_tvshows;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| hbtn_0d_tvshows    |
++--------------------+
+1 rows in set (0.00 sec)
+```
+  2. Exit the MySQL shell (quit command prompt)
+
+  3. Enter the following command to import the dump file:
+```
+sudo mysql hbtn_0d_tvshows < hbtn_0d_tvshows.sql
+```
+
+  4. Launch Mysql shell to check the database: `sudo mysql`
+  5. Display the contents of the database (`mysql> USE hbtn_0d_tvshows`)
+
+```
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed):
+
+mysql> SHOW TABLES;
++---------------------------+
+| Tables_in_hbtn_0d_tvshows |
++---------------------------+
+| tv_genres                 |
+| tv_show_genres            |
+| tv_shows                  |
++---------------------------+
+```
 
 ### What is...?
 
-|DCL||
+|DCL|DML|
 |:--:|:--:|
-|Data ControlLanguage|
+|Data Control Language|Data Manipulation Language|
 
 Resources
 ==========
