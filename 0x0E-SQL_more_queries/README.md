@@ -152,6 +152,7 @@ SELECT * FROM table_1 WHERE column1 = (SELECT column1 FROM table_2);
 </p>
 
 =========
+
 Importing the database dump from hbtn_0d_tvshows to your MySQL server:[download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql)
 
 1. Copy/paste download link using:
@@ -195,9 +196,15 @@ mysql> SHOW DATABASES;
 ```
 sudo mysql hbtn_0d_tvshows < hbtn_0d_tvshows.sql
 ```
+    * A succesful import won't display any comments on the screen
 
   4. Launch Mysql shell to check the database: `sudo mysql`
-  5. Display the contents of the database (`mysql> USE hbtn_0d_tvshows`)
+  5. To load the database, enter:***"USE new_db_name"***
+
+```
+mysql> USE hbtn_0d_tvshows
+```
+ 6. Finally to confirm, display the contents of the database by typing: ***"SHOW TABLES"***
 
 ```
 Reading table information for completion of table and column names
