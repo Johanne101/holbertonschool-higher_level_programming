@@ -20,8 +20,7 @@ Global privileges apply to all databases in a MySQL Server.
 To assign global privileges, you use the *.* syntax, for example:
 
 ```
-GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
-
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost'
 ```
 
 It's even possible to give only read access to a database to a user and more.
@@ -122,13 +121,32 @@ mysql> SELECT name, price
 ```
 </p>
 
-* What are subqueries
+## What Are...?
+-----------------
+
+* [subqueries](https://www.hostinger.com/tutorials/what-is-a-query)
 
 <p>
 A subquery is a SELECT statement within another statement.
-All subquery forms and operations that the SQL standard requires are supported,
-as well as a few features that are MySQL-specific.
-Notice that this query below returns a single column and a single row.
+A query can either be a select, an action, or a combination of both.
+Select queries can retrieve information from data sources,
+and action queries work for data manipulation, for example, to add, change or delete data.
+
+Advanced users can also use query commands to perform various programming tasks,
+from creating MySQL users and granting permissions to changing WordPress URLs in MySQL databases.
+
+|*queries* | *statement/command*|
+|:---------| :---------:|
+|SELECT|fetch data from the database."as every request begins with a select query"|
+|AND|combine data from one or more tables.|
+|CREATE TABLE|build different tables and specify the name of each column within.|
+|ORDER BY|sort data results either numerically or alphabetically.|
+|UPDATE|modify existing rows in a table.|
+|INSERT|add new data or rows to an existing table.|
+|WHERE|filter data and get its value based on a set condition.|
+|SUM|summarize data from a specific column.|
+
+*E.g.* Notice that this query below returns a single column and a single row.
 
 ```
 SELECT * FROM table_1 WHERE column1 = (SELECT column1 FROM table_2);
@@ -136,14 +154,14 @@ SELECT * FROM table_1 WHERE column1 = (SELECT column1 FROM table_2);
 
 </p>
 
-* What are JOIN and UNION
+* [JOIN and UNION](https://www.javatpoint.com/mysql-union-vs-join)
 
 <p>
 
-| |[JOIN](https://tableplus.com/blog/2018/09/a-beginners-guide-to-seven-types-of-sql-joins.html)|**UNION**|
-|:--:|:--:|:--:|
-|Def.|corresponding to a join operation in relational algebra – combines columns from one or more tables into a new table.|Combines the results of two SQL queries into a single table of all matching rows. The two queries must result in the same number of columns and compatible data types in order to unite.|
-|**TYPES**|INNER, LEFT, LEFT OUTER, RIGHT OUTER, FULL OUTER, FULL INNER, TOP and CROSS|UNION, INTERSECT, and EXCEPT|
+||**Def.:**|**Types**|
+||:--:|--:|
+|[JOIN](https://tableplus.com/blog/2018/09/a-beginners-guide-to-seven-types-of-sql-joins.html)|corresponding to a join operation in relational algebra – combines columns from one or more tables into a new table.|INNER, LEFT, LEFT OUTER, RIGHT OUTER, FULL OUTER, FULL INNER, TOP and CROSS|
+|[UNION](https://www.w3schools.com/mysql/mysql_union.asp)|Combines the results of two SQL queries into a single table of all matching rows. The two queries must result in the same number of columns and compatible data types in order to unite.|UNION, INTERSECT, and EXCEPT|
 
 ---------------
 ***JOIN:***
