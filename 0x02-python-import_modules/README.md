@@ -1,11 +1,19 @@
 Import & modules
 ================
+|**Index #**|*Concept:*|
+|:-|:-----:|
+|#0|[How to import functions from another file](https://github.com/Johanne101/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/0-add.py)|
+|#1|[How to use imported functions](https://github.com/Johanne101/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/1-calculation.py)|
+|#2|How to create a module|
+|#3|How to use the built-in function dir()|
+|#4|How to prevent code in your script from being executed when imported|
+|#5|How to use [command line arguments](https://github.com/Johanne101/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/2-args.py) with your Python programs|
 
 **Why Python programming is awesome**
   * Despite it's easy use, It's also a very powerful language
   * I'ts one of the 3 "official" languages at Google as an example.
 
-### How to import functions from another file
+### 0. Importing Funtions from other files
 <p>
 A function can be called and run in a different file than the file where the function is defined.
 
@@ -33,7 +41,7 @@ def falldist(t,g=9.81):
 ```
 This file, `myfunctions.py` can be imported into another script (another .py file)
 
-### Steps in how to use imported functions:
+### 1. Steps to use imported functions:
 
 To use the functions written in one file inside another file
 1. include the import line
@@ -73,7 +81,7 @@ out2 = plustwo(3)
 print(out1, out2)
 ```
 
-### Modules:
+### 3. Modules:
 
 **First, what is a Module?**
 
@@ -107,7 +115,7 @@ import mymodule
 mymodule.greeting("Alex")
 ```
 
-### Built-in Functions:
+### 3. Built-in Functions:
 
 - How to use the built-in function `dir()`?
 
@@ -135,7 +143,7 @@ as it aims to produce the most relevant one, rather than the complete informatio
   * For **Modules/Library** objects, it tries to return a list of names of all the attributes contained in that module. 
   * If no parameters are passed it returns a list of names in the current local scope
 
-### How to prevent code in your script from being executed when imported
+### 4. How to prevent code in your script from being executed when imported
 
 > Before executing code, Python interpreter reads source file and define few special variables/global variables.
 > If this file is being imported from another module,
@@ -211,7 +219,7 @@ sys.exit()
 
 ```
 
-#### Command Line Arguments:
+#### 5. Using Command Line Arguments in programs:
 <p>
 
 - How to use command line arguments with your Python programs
