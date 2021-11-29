@@ -16,8 +16,18 @@ collections of data,the other 3 are:
 
 ### 1. What are the differences and similarities between strings and lists?
 
-  * Strings can only consist of characters,
-  * while lists can contain any data type.
+* Strings can only consist of characters,
+
+[String format() Method](https://www.w3schools.com/python/ref_string_format.asp)
+#### The Placeholders
+
+The placeholders can be identified using;
+  * named indexes {price},
+  * numbered indexes {0}, or even
+  * empty placeholders {}
+    * [Formating Types]()
+
+* while lists can contain any data type.
 
 Because of the previous difference, we cannot easily make a list into a string
 but we can make a string into a list of characters,
@@ -61,12 +71,12 @@ Here are the most common methods of lists and how to use them:
 |Method | Description | Arguments|Syntax|
 |------ | ----------- | ---------|------|
 |**.append()** | method allows you to **add another item to the end of your list**|The method takes one required argument, which is the item you wish to add to your list.|
-|**.extend()** | it allows you to **add onto your list**; <p>however, the `extend()` ***method*** allows you to add all of the items from another iterable </p>  * (list, tuple, set, etc.) to the end of your list as separate items instead of one item. | The method takes one required argument, the iterable.|
+|**.extend()** |adds the specified list elements (or any iterable) to the end of the current list.| The method takes one required argument, the iterable.|
 |**.pop()** | method allows you to **remove an element from your list at a specified index value.** | -.|
 |**.remove()** | method allows you to **remove an item from your list.** Removes **the first occurrence** **of** a **specified value in a list.**| The method takes one required argument, the item you wish to remove.|
 |**.sort()** | method **sorts a list by certain criteria.** |can take two optional arguments. The first argument is setting either reverse=True or reverse=False.|
 |**.reverse()** | method **reverses the order of the items in the list** |The method takes no arguments.|
-|**.count()** | method **returns the number of occurrences** **of** a specified **item(s) in a list**. This method can be useful if you wish to find out what items appear more than once in a list. | <p>The method takes one required argument, which is the item you wish to find the count of `index()`method returns the index of the first occurrence of the specified item. If the item does not exist in the list, you will get an error.</p>|
+|**.count()** | method **returns the number of occurrences** **of** a specified **item(s) in a list**. This method can be useful if you wish to find out what items appear more than once in a list. |<p>The method takes one required argument, which is the item you wish to find the count of.</p>|
 |**.insert()**|method **inserts a specified item into a list** **at a specified index**.|The method takes two required arguments — the integer index you wish to insert the value at and the item you’d like to insert.|
 |**.copy()**|method simply **returns a copy of your list**.| The method takes no arguments.|
 |**.clear()**|method simply **removes all items from a list**, *leaving an empty list*. |The method takes no arguments.|
@@ -76,6 +86,10 @@ Here are the most common methods of lists and how to use them:
 
 Lists are ordered and mutable (changeable), meaning each item is assigned
 to a specific index and can be sorted, and has the ability to be altered.
+
+>>The `extend()` method allows you to **add onto your list** like `append()`...
+>>however, `extend()` allows you to add all of the items from another iterable
+* (list, tuple, set, etc.) >>to the end of your list as separate items instead of one item.
 
 
 ### 3. How to use lists as stacks and queues
@@ -101,7 +115,7 @@ to a specific index and can be sorted, and has the ability to be altered.
 
 
 ### 4. What are list comprehensions and how to use them
-  * List comprehensions are used for creating new lists from other iterables like:
+* List comprehensions are used for creating new lists from other iterables like:
     * tuples,
 	* strings,
 	* arrays,
@@ -110,6 +124,8 @@ to a specific index and can be sorted, and has the ability to be altered.
 A list comprehension consists of brackets containing
 the expression, which is executed for each element
 along with the for loop to iterate over each element.
+
+[List conprehension](https://docs.python.org/3/glossary.html#term-iterable): ***Iterables***
 
 ### 5. What are tuples and how to use them
 
@@ -144,7 +160,7 @@ This means that tuples cannot be changed
 
 ***Description:***
 
-* Sequences
+* [Sequence Types](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
 A sequence is an ordered collection of items
 
 Sequences are a generic term for an ordered set which means that the order in which we input the items will be the same when we access them.
@@ -194,7 +210,25 @@ While in **“unpacking a tuple”** we extract those values into a single varia
 Sequence unpacking in python allows you to take objects in a collection and store them in variables for later use. This is particularly useful when a function or method returns a sequence of objects
 Python allows unpacking of any sequence(iterable) into variables using a simple assignment operation. Unpacking can be done by assigning sequence(iterable) to comma separated variables .
 
+**Unpack a Collection**
 
+If you have a collection of values in a list, tuple etc. Python allows you extract the values into variables. This is called unpacking.
+
+Example
+Unpack a list:
+
+```
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+```
+```
+apple
+banana
+cherry
+```
 
 ### 10. What is the `del` statement and how to use it
 
