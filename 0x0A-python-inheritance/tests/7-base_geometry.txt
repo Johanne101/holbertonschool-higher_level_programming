@@ -1,29 +1,96 @@
 ============================
-DOCTEST for x-name_of_file.py
+DocTest for 7-base_geometry.py
 ============================
-""" How to test name_of_func() function """
-# python3 -m doctest -v ./test/x-file_test.txt
+""" Test BaseGeometry """
 
 ___________________________________________
 
-""" Importing the function_name() function """
+""" Import """
 ___________________________________________
 
->>> matrix_divided = __import__('x-name_of_func').name_of_func
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-Normal Usage
-============
-<expected ouput here>
->>> name_of_func(parameter, parameter)
-expected correct ouput
 
-Edge Cases
-==========
+-------------------------------------------------------------
 
->>> name_of_func(parameter, somethingwrong)
-typeoferror(text of error)
+case 1:
+	common case
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("width", 89)
+
+
+case 2:
+	non integer value for 'value'
+
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
 ...
-typeroferror(text of error)
+TypeError: name must be an integer
 
-Missing Arguments
-=================
+
+case 3:
+	value equal 0
+
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+...
+ValueError: age must be greater than 0
+
+
+
+case 4: 
+	value less than 0
+
+>>> bg.integer_validator("distance", -4)
+Traceback (most recent call last):
+...
+ValueError: distance must be greater than 0
+
+
+case 5:
+	only one argument
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("my_int")
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+
+
+case 6:
+	no arguments
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+case 7: 
+	name var is called diferrently
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("distance", 30)
+
+
+case 8:
+	Float type
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", 4.5)
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+
+case 9:
+	method area()
+
+>>> bg = BaseGeometry();
+>>> bg.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
