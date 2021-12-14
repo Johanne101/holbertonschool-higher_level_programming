@@ -15,8 +15,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """ return standard print of class """
-        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-            self.x, self.y, self.width, self.height))
+        msg = "[Rectangle] ({}) {}/{} - {}/{}"
+        return msg.format(self.id, self.x, self.y, self.width, self.height)
 
     @property
     def width(self):
@@ -77,10 +77,9 @@ class Rectangle(Base):
     def display(self):
         """Prints in stdout the Rectangle instance with the character #
         """
-        if self.__y > 0:
-            print(("\n" * self.y), end="") 
-            """suggest to exchg `end=""` to [:-1]"""
-            print((" " * self.x + (self.width * "#") + '\n') * self.height, end="")
+        print(("\n" * self.y), end="")
+        """suggest to exchg `end=""` to [:-1]"""
+        print((" " * self.x + (self.width * "#") + '\n') * self.height, end="")
 
     def update(self, *args, **keywords):
         """

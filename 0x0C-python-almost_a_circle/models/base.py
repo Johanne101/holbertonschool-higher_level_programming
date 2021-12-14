@@ -64,8 +64,8 @@ class Base:
     def save_to_file_csv(cls, list_objs):
         '''saves list to CSV serialized file'''
         if list_objs is None:
-            with open(cls.__name__ + ".csv", mode='w', encoding="utf-8") as csv_file:
-                csv_file.write("[]")
+            with open(cls.__name__ + ".csv", 'w', encoding="utf-8") as file:
+                file.write("[]")
         else:
             if cls.__name__ == "Rectangle":
                 attr_h = ['id', 'width', 'height', 'x', 'y']
