@@ -1,0 +1,70 @@
+Test 'Print square'
+===========================
+
+==========================================
+''' Importing function''''
+==========================================
+
+>>> print_square = __import__('4-print_square').print_square 
+
+Success Case
+=============
+
+case 1:
+	Square size 4
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+
+---------------------
+case 2:
+	Square size 0
+>>> print_square(0)
+
+
+
+Error Cases
+============
+
+case 3:
+	Square size less than ZERO
+	>>> print_square(-1)
+	Traceback (most recent call last):
+	...
+	ValueError: size must be >= 0
+
+---------------------
+case 4:
+	Square size type not an int
+
+	>>> print_square("string")
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+---------------------
+case 5:
+	Square size is NoneType
+	>>> print_square(None)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+---------------------
+case 6:
+	Square size is a positive float
+	>>> print_square(5.5)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+---------------------
+case 7:
+	function called withouth arguments
+
+	>>> print_square()
+	Traceback (most recent call last):
+	...
+	TypeError: print_square() missing 1 required positional argument: 'size'

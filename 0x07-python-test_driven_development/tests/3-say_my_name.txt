@@ -1,0 +1,60 @@
+Testing 'Say my name'
+===========================
+
+==========================================
+''' Importing function''''
+==========================================
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Success Case
+=============
+
+case 1:
+	Correct Format for 2 strings
+	>>> say_my_name("Nat", "Prudhome")
+	My name is Nat Prudome
+
+---------------------------
+case 2:
+	Only giving first_name
+	>>> say_my_name("Nat")
+	My name is Nat
+
+---------------------------
+case 3:
+	first_name is not a string
+	>>> say_my_name(100)
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+---------------------------
+case 4:
+	last_name is not a string
+	>>> say_my_name("Nat", 58)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+----------------------------
+case 5:
+	empty strings
+	>>> say_my_name("")
+	My name is  
+
+----------------------------
+case 6:
+	Nor first nor last name is a string
+	>>> say_my_name(["Nat"], 58)
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+----------------------------
+case 7:
+	Missing two args
+	>>> say_my_name()
+	Traceback (most recent call last):
+	...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
