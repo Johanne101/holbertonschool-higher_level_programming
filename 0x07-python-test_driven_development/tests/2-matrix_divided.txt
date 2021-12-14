@@ -1,0 +1,104 @@
+Tests 'matrix_divided'
+=======================
+""" How to test name_of_func() function """
+# python3 -m doctest -v ./test/x-file_test.txt
+
+==========================================
+''' Importing MATRIX_DIVISION function''''
+==========================================
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Success Case
+=============
+
+Case 1: Matrix division
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, 3)
+[[0.67, 0.67, 1.0], [1.33, 1.67, 2.0], [1.0, 1.33, 1.67]]
+
+-----------------------------------------------------------
+Case 2: No elements
+>>> matrix_divided([[]], 3)
+[[]]
+
+-----------------------------------------------------------
+case 3: Regular Division
+''' Expecting: [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]] '''
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+-----------------------------------------------------------
+case 4: Division with floats
+'''Expecting:[[0.4, 0.8, 1.2], [1.6, 2.0, 2.4]] '''
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 2.5)
+[[0.4, 0.8, 1.2], [1.6, 2.0, 2.4]]
+
+----------------------------------------------------------
+case 5: Dividing with Negative
+''' Expecting: [[-0.5, -1.0, -1.5], [-2.0, -2.5, -3.0]] '''
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], -2)
+[[-0.5, -1.0, -1.5], [-2.0, -2.5, -3.0]]
+
+----------------------------------------------------------
+case 6: Float in list
+'''Expecting: [[0.75, 1.4, 1.65], [2.1, 2.75, 3.3]] '''
+>>> matrix_divided([[1.5, 2.8, 3.3], [4.2, 5.5, 6.6]], 2)
+[[0.75, 1.4, 1.65], [2.1, 2.75, 3.3]]
+
+----------------------------------------------------------
+case 7: Divide by big number
+''' Expecting: [0.0, 0.0, 0.0], [0.0, 0.0, 0.0] '''
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 8362021)
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+----------------------------------------------------------
+case 8: Divide floats
+'''Expected: [[0.45, 0.9, 1.35], [1.89, 2.25, 2.7]] '''
+>>> matrix_divided([[1, 2, 3], [4.2, 5, 6]], 2.22)
+[[0.45, 0.9, 1.35], [1.89, 2.25, 2.7]]
+
+
+----------------------------------------------------------
+
+===========
+ERROR Types
+===========
+
+
+case 8:
+>>> matrix = [[]]
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+case 9:
+function called with no args
+>>> matrix_divided()
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+case 10:
+function called with 1 argument
+>>> matrix_divided([[15, 16]])
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+case 11:
+Divisor argument is ZERO float
+>>> matrix = [[1, 2.5, 3], [4, -100.5, 6]]
+>>> matrix_divided(m, 0.0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
+
+case 12:
+Divisor argument is ZERO
+>>> matrix = [[1, 2.5, 3], [4, -100.5, 6]]
+>>> matrix_divided(m, 0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero

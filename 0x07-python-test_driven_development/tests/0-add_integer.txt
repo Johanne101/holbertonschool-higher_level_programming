@@ -1,0 +1,97 @@
+The 'add-integer' testing file
+==============================
+Importing add_integer function
+>>> add_integer = __import__('0-add_integer').add_integer
+
+=============
+SUCCESS CASES
+=============
+Test 1: Normal addition
+  ''' Expecting: 3 '''
+>>> add_integer(1, 2)
+3
+
+Case 2: Negative addition
+  ''' Expecting: 98 '''
+>>> add_integer(100, -2)
+98
+
+case 3: b is ommited, using default values of 98
+''' Expecting: 100 '''
+>>> add_integer(2)
+100
+
+case 4: One positive float
+  ''' Expecting: 7 '''
+>>> add_integer(4, 3.5)
+7
+
+case 5: Two Floats
+  ''' Expecting: 8.2, but we expect whole numbers '''
+>>> add_integer(4.5, 4.7)
+8
+
+case 6: One Negative float
+  ''' Expecting: 98 '''
+>>> add_integer(100.3, -2)
+98
+
+Case 7: Two Negative addition
+  ''' Expecting: -19 '''
+>>> add_integer(-4, -15)
+-19
+
+case 8: Two negative Floats
+  ''' Expecting: -7 '''
+>>> add_integer(-4.7, -3.5)
+-7
+
+
+===========
+ERROR CASES
+===========
+
+case 9: No arguements passed
+''' Expecting: Missing arguments'''
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+---------------------------------------
+case 10: b is None
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+---------------------------------------
+case 11: Invalid Syntax
+''' Expecting: -7e will be an invalid Syntax '''
+>>> add_integer(-7e, 10)
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+---------------------------------------
+case 12: float NaN
+''' cannot convert float NaN to int '''
+>>> add_integer(float("NaN"), 85)
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
+---------------------------------------
+case 13: Overflow
+>>> type(add_integer(10e500**2, 1))
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+---------------------------------------
+case 14: NameError
+''' Expecting: a has no value'''
+>>> add_integer("a", 10)
+Traceback (most recent call last):
+...
+NameError: a must be an integer
