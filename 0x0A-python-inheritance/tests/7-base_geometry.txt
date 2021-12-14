@@ -1,0 +1,29 @@
+============================
+DOCTEST for x-name_of_file.py
+============================
+""" How to test name_of_func() function """
+# python3 -m doctest -v ./test/x-file_test.txt
+
+___________________________________________
+
+""" Importing the function_name() function """
+___________________________________________
+
+>>> matrix_divided = __import__('x-name_of_func').name_of_func
+
+Normal Usage
+============
+<expected ouput here>
+>>> name_of_func(parameter, parameter)
+expected correct ouput
+
+Edge Cases
+==========
+
+>>> name_of_func(parameter, somethingwrong)
+typeoferror(text of error)
+...
+typeroferror(text of error)
+
+Missing Arguments
+=================
