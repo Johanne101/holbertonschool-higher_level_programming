@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Model: Say my name function"""
 
+
 def say_my_name(first_name, last_name=""):
     """Funcion prints My name is:
     <first name> <last name>
