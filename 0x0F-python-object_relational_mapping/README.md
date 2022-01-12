@@ -58,6 +58,19 @@ session.close()
 
 2. How to connect to a MySQL database from a Python script
 ----------------------------------------------------------
+* [Connecting to a MySQL database](https://www.mikusa.com/python-mysql-docs/connection.html)
+
+MySQLdb Package
+MySQLdb - A DB API v2.0 compatible interface to MySQL.
+
+This package is a wrapper around _mysql, which mostly implements the MySQL C API.
+
+connect() – connects to server
+
+See the C API specification and the MySQL documentation for more info on other items.
+
+For information on how MySQLdb handles type conversion, see the MySQLdb.converters module.
+* [MySQLdb Package](https://mysqlclient.readthedocs.io/MySQLdb.html#MySQLdb.Connect)
 
 3. How to SELECT rows in a MySQL table from a Python script
 ------------------------------------------------------------
@@ -65,11 +78,27 @@ session.close()
 4. How to INSERT rows in a MySQL table from a Python script
 ------------------------------------------------------------
 
-5. What ORM means
+### 5. What ORM means
 -----------------
+Object-relational Mappers (ORMs)
 
-6. How to map a Python Class to a MySQL table
+<p>
+An object-relational mapper (ORM) is a code library that automates the
+transfer of data stored in relational database tables into objects
+that are more commonly used in application code.
+
+</p>
+
+### 6. How to map a Python Class to a MySQL table
 ----------------------------------------------
+
+<p>
+SQLAlchemy is a library that facilitates the communication between Python programs and databases. Most of the times, this library is used as an Object Relational Mapper (ORM) 
+
+ref:
+https://docs.sqlalchemy.org/en/13/orm/tutorial.html#declare-a-mapping
+
+</p>
 
 7. Using container-on-demand to run MySQL
 ------------------------------------------
@@ -142,7 +171,7 @@ Also, you can have this warning message:
 
 ```
 /usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py:552: Warning: (1681, "'@@SESSION.GTID_EXECUTED' is deprecated and will be re
-moved in a future release.")                                                                                                                    
+moved in a future release.")
   cursor.execute(statement, parameters)
 ```
 
@@ -164,5 +193,6 @@ Resources
 * [Python SQLAlchemy Cheatsheet](https://www.pythonsheets.com/notes/python-sqlalchemy.html)
 * [SQLAlchemy ORM Tutorial for Python Developers](https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/) (**Warning:** *This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL*)
 * [SQLAlchemy Tutorial](https://overiq.com/sqlalchemy-101/)
+
 </p>
 
