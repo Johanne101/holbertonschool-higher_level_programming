@@ -76,6 +76,20 @@ $(selector).css({property:value, property:value, ...}) // Set multiple propertie
 
 ## What are differences between ID, class and tag name selectors
 ## How to modify an HTML element style
+### Event Handling
+
+<p>
+Show the #banner-message element that is hidden with display:none in its CSS when any button in #button-container is clicked.
+
+```.js
+var hiddenBox = $( "#banner-message" );
+$( "#button-container button" ).on( "click", function( event ) {
+  hiddenBox.show();
+});
+```
+
+</p>
+
 ## How to get and update an HTML element content
 ## How to modify the DOM
 ## How to make a GET request with JQuery Ajax
@@ -103,6 +117,7 @@ Resources
   - [JavaScript: jQuery selector()](https://www.w3schools.com/jsref/met_document_queryselector.asp)
   - [ Using jQuery HTML/CSS Methods](https://www.w3schools.com/jquery/jquery_ref_html.asp)
   - [jQuery css() method](https://www.w3schools.com/jquery/css_css.asp)
+  - [Methods](https://api.jquery.com/click/#click-handler)
   -[JQuery | Change the text of a span element](https://www.geeksforgeeks.org/jquery-change-the-text-of-a-span-element/)
   - [How to use jQuery selector](https://tutorialdeep.com/jquery/jquery-selector/)
 * [Get and set content](https://jquery-tutorial.net/dom-manipulation/getting-and-setting-content/)
