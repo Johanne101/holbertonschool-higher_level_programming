@@ -52,8 +52,13 @@ This method sets the specified CSS property for ALL matched elements.
 #### Using elements, ID's and classes
 
 <p>
+**Using a jQuery Selector for HTML using jQuery**:
+
+A selector of jQuery starts from the dollar($) sign with a parenthesis – `$()` after it. Below are the various selectors you can use to select and manipulate an HTML element.
+
 **The #id selector**
-A very common selector type is the ID based, which we saw in the "Hello, world" example. It uses the ID attribute of a HTML tag to locate the desired element. An ID should be unique, so you should only use this selector when you wish to locate a single, unique element. To locate an element with a specific ID, write a hash character, followed by the ID of the element you wish to locate
+
+A very common selector type is the ID based. It uses the ID attribute of a HTML tag to locate the desired element. An ID should be unique, so you should only use this selector when you wish to locate a single, unique element. To locate an element with a specific ID, write a hash character, followed by the ID of the element you wish to locate.
 </p>
 
 ##### Syntax
@@ -99,6 +104,7 @@ Resources
   - [ Using jQuery HTML/CSS Methods](https://www.w3schools.com/jquery/jquery_ref_html.asp)
   - [jQuery css() method](https://www.w3schools.com/jquery/css_css.asp)
   -[JQuery | Change the text of a span element](https://www.geeksforgeeks.org/jquery-change-the-text-of-a-span-element/)
+  - [How to use jQuery selector](https://tutorialdeep.com/jquery/jquery-selector/)
 * [Get and set content](https://jquery-tutorial.net/dom-manipulation/getting-and-setting-content/)
 * [Manipulate CSS classes](https://jquery-tutorial.net/dom-manipulation/getting-and-setting-css-classes/)
 * [Manipulate DOM elements](https://jquery-tutorial.net/dom-manipulation/the-append-and-prepend-methods/)
