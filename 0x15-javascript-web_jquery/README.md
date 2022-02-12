@@ -7,6 +7,7 @@ JavaScript - Web jQuery
 ## How to select HTML elements in JavaScript
 
 #### Text Color
+
 <p>
 
 To change the text color of a given element,
@@ -48,7 +49,14 @@ This method returns the specified CSS property value of the FIRST matched elemen
 
 This method sets the specified CSS property for ALL matched elements.
 
-#### Syntax
+#### Using elements, ID's and classes
+
+<p>
+**The #id selector**
+A very common selector type is the ID based, which we saw in the "Hello, world" example. It uses the ID attribute of a HTML tag to locate the desired element. An ID should be unique, so you should only use this selector when you wish to locate a single, unique element. To locate an element with a specific ID, write a hash character, followed by the ID of the element you wish to locate
+</p>
+
+##### Syntax
 Return the CSS property value:
 
 ```.js
