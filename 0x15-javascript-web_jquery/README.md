@@ -8,12 +8,14 @@ JavaScript - Web jQuery
 
 #### Text Color
 <p>
+
 To change the text color of a given element,
 first we need to access it inside the JavaScript
 by using the `document.getElementId()` or `document.querySelector()`
 methods and set its `style.color` property to your desired color.
 
 Here is an example, that changes the text color to ``orange``:
+
 </p>
 
 ```
@@ -21,6 +23,15 @@ const div = document.getElementById("container");
 
 div.style.color = "orange";
 ```
+
+or query selector methods like:
+
+```.js
+document.querySelector("p"); // Get the first <p> element
+
+document.querySelector(".example"); // Get the first element with class="example"
+```
+
 ## How to select HTML elements with JQuery
 ## What are differences between ID, class and tag name selectors
 ## How to modify an HTML element style
@@ -39,13 +50,6 @@ div.style.color = "orange";
 <head>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
-```
-or query selector methods like:
-
-```.js
-document.querySelector("p"); # Get the first <p> element
-
-document.querySelector(".example"); # Get the first element with class="example"
 ```
 
 Resources
