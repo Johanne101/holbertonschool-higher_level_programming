@@ -35,7 +35,7 @@ document.querySelector(".example"); // Get the first element with class="example
 
 ## How to select HTML elements with JQuery
 
-#### Definition and Usage
+### Definition and Usage
 <p>
 The `css()` method sets or returns one or more style properties for
 the selected elements.
@@ -51,11 +51,15 @@ This method returns the specified CSS property value of the FIRST matched elemen
 This method sets the specified CSS property for ALL matched elements.
 </p>
 
-#### Using elements, ID's and classes
+### Using elements, ID's and classes
 
 **Using a jQuery Selector for HTML using jQuery**:
 <p>
-A selector of jQuery starts from the dollar($) sign with a parenthesis – `$()` after it. Below are the various selectors you can use to select and manipulate an HTML element.
+
+A selector of jQuery starts from the dollar($) sign with a parenthesis
+– `$()` after it. Below are the various selectors you can use to
+select and manipulate an HTML element.
+
 </p>
 
 **The #id selector**
@@ -64,10 +68,9 @@ A very common selector type is the ID based. It uses the ID attribute of a HTML 
 </p>
 
 ##### Syntax
-Return the CSS property value:
 
 ```.js
-$(selector).css(property)
+$(selector).css(property) // Return the CSS property value
 
 $(selector).css(property,value) // Set the CSS property and value
 
