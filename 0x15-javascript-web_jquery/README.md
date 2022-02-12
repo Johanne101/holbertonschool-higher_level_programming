@@ -15,8 +15,8 @@ JavaScript - Web jQuery
 ## How to listen/bind to DOM events
 ## How to listen/bind to user events
 
-## More Info
 ----------------------
+## More Info
 ### Import JQuery
 
 ```jQuery
