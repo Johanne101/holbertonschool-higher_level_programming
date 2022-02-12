@@ -35,10 +35,17 @@ div.style.color = "orange";
 ## More Info
 ### Import JQuery
 
-```jQuery
+```.js
 <head>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
+```
+or query selector methods like:
+
+```.js
+document.querySelector("p"); # Get the first <p> element
+
+document.querySelector(".example"); # Get the first element with class="example"
 ```
 
 Resources
@@ -48,6 +55,7 @@ Resources
 * [What is JavaScript?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 * [Selector](https://jquery-tutorial.net/selectors/using-elements-ids-and-classes/)
   - [Changing the text color](https://reactgo.com/change-text-color-javascript/#changing-the-text-color)
+  - [JavaScript: jQuery selector()](https://www.w3schools.com/jsref/met_document_queryselector.asp)
 * [Get and set content](https://jquery-tutorial.net/dom-manipulation/getting-and-setting-content/)
 * [Manipulate CSS classes](https://jquery-tutorial.net/dom-manipulation/getting-and-setting-css-classes/)
 * [Manipulate DOM elements](https://jquery-tutorial.net/dom-manipulation/the-append-and-prepend-methods/)
