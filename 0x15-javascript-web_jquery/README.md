@@ -37,27 +37,29 @@ document.querySelector(".example"); // Get the first element with class="example
 
 #### Definition and Usage
 <p>
-
 The `css()` method sets or returns one or more style properties for
 the selected elements.
+</p>
 
 **When used to return properties:**
-
+<p>
 This method returns the specified CSS property value of the FIRST matched element. However, shorthand CSS properties (like "background" and "border") are not fully supported and may give different results in different browsers.
+</p>
 
 **When used to set properties:**
-
+<p>
 This method sets the specified CSS property for ALL matched elements.
+</p>
 
 #### Using elements, ID's and classes
 
-<p>
 **Using a jQuery Selector for HTML using jQuery**:
-
+<p>
 A selector of jQuery starts from the dollar($) sign with a parenthesis – `$()` after it. Below are the various selectors you can use to select and manipulate an HTML element.
+</p>
 
 **The #id selector**
-
+<p>
 A very common selector type is the ID based. It uses the ID attribute of a HTML tag to locate the desired element. An ID should be unique, so you should only use this selector when you wish to locate a single, unique element. To locate an element with a specific ID, write a hash character, followed by the ID of the element you wish to locate.
 </p>
 
@@ -87,7 +89,6 @@ $( "#button-container button" ).on( "click", function( event ) {
   hiddenBox.show();
 });
 ```
-
 </p>
 
 ## How to get and update an HTML element content
