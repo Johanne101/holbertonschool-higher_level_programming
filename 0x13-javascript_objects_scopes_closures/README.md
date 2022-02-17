@@ -23,6 +23,9 @@ $ sudo npm install semistandard --global
 
 ## Why JavaScript programming is amazing
 ## How to create an object in JavaScript
+
+**Introducing constructors**
+
 ## What `this` means
 ## What `undefined` means
 ## Why the variable type and scope is important
@@ -59,3 +62,4 @@ Resources
 * [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * [this/self](https://alistapart.com/article/getoutbindingsituations/)
 * [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
+
