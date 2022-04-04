@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 '''
-Module contains a true or false method
+Module contains "is same class(obj,a_class)" function
 '''
 
 
 def is_same_class(obj, a_class):
     """ function returns:
-    True: if the object is exactly an instance
-    of the specified class.
+    True: if the object is exactly an instance of the specified class.
     or
     False: otherwise.
     """

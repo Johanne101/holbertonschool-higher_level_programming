@@ -36,9 +36,9 @@ $ sudo npm install semistandard --global
 16. How to import a file
 
 * How to process.argv, reference [here](https://nodejs.org/api/process.html#process_process_argv)
+
 <p>
 The `process.argv` property returns an array containing the command-line arguments passed when the Node.js process was launched.
-
 </p>
 
 * What is scope and how to use it?
@@ -71,6 +71,17 @@ JavaScript is a programming language that adds interactivity to your website. Th
 |Can it be declared without ***initializing***???| `var` | `let` | `const` |
 |:----------------|:----:|:----:|:----:|
 |Yes or No(x)|- [YES] | - [x] | - [x] |
+
+5. JavaScript data types
+------------------------
+<p>
+</p>
+
+
+6. if, if ... else statements
+-----------------------------
+
+
 
 10. JS [Comments](https://www.w3schools.com/js/js_comments.asp)
 -------------------------------------------------------
@@ -106,6 +117,10 @@ Resources
 ===========
 ***Read or watch:***
 
+* [Condition Statements]()
+  * [NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
+  * [isNaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
+
 * [Writing JavaScript Code](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 * [Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
 * [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
@@ -115,6 +130,7 @@ Resources
 * [Controlling Program Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 * [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
   - [process.argv](https://nodejs.org/api/process.html#processargv)
+  - [`process.argv`](https://nodejs.org/api/process.html#process_process_argv)
 * [Objects and Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
   - [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
   - [Object-oriented](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)

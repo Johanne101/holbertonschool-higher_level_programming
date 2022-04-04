@@ -8,6 +8,9 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
 
+
+
+
     @property
     def size(self):
         return self.__size
@@ -47,7 +50,8 @@ class Square:
     def my_print(self):
         if self.size == 0:
             print()
-        for row in range(self.__size):
+        else:
+            for row in range(self.__size):
             for col in range(self.size):
                 print('#', end="")
             print()

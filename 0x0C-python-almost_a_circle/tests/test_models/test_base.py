@@ -18,9 +18,7 @@ class TestBase(unittest.TestCase):
                                         "tests/test_models/test_base.py"])
         self.assertEqual(result.total_errors, 0,
                          "Found code style errors (and warnings).")
-
-   @classmethod
-    def setUpClass(self):
+    def setUpCls(self):
         """Seting up the objects or instances to be tested
         """
         Base._Base__nb_objects = 0

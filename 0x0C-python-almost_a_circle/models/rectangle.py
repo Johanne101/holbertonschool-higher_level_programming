@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Model: rectangle """
+"""Model: rectangle"""
 from models.base import Base
 
 

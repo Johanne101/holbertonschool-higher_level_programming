@@ -67,7 +67,7 @@ select and manipulate an HTML element.
 A very common selector type is the ID based. It uses the ID attribute of a HTML tag to locate the desired element. An ID should be unique, so you should only use this selector when you wish to locate a single, unique element. To locate an element with a specific ID, write a hash character, followed by the ID of the element you wish to locate.
 </p>
 
-##### Syntax
+#### Syntax
 
 ```.js
 $(selector).css(property) // Return the CSS property value
@@ -85,6 +85,7 @@ $(selector).css({property:value, property:value, ...}) // Set multiple propertie
 
 <p>
 Show the #banner-message element that is hidden with display:none in its CSS when any button in #button-container is clicked.
+</p>
 
 ```.js
 var hiddenBox = $( "#banner-message" );
@@ -92,12 +93,16 @@ $( "#button-container button" ).on( "click", function( event ) {
   hiddenBox.show();
 });
 ```
-</p>
 
 ## How to get and update an HTML element content
 ## How to modify the DOM
-## How to make a GET request with JQuery Ajax
-## How to make a POST request with JQuery Ajax
+## What is AJAX???
+<p>
+What is AJAX? AJAX = A synchronous J avaScript A nd X ML. AJAX is not a programming language. AJAX just uses a combination of: A browser built-in XMLHttpRequest object (to request data from a web server) JavaScript and HTML DOM (to display or use the data) AJAX is a misleading name. AJAX applications might use XML to transport data.
+</p>
+
+### How to make a `GET` request with JQuery Ajax
+### How to make a `POST` request with JQuery Ajax
 ## How to listen/bind to DOM events
 ## How to listen/bind to user events
 
@@ -140,3 +145,9 @@ Resources
   * [jQuery Downloads](https://jquery.com/download/)
   * [jQuery-migrations Plugin](https://api.jquery.com/category/ajax/)
   * [jQuery: Ajax](https://api.jquery.com/category/ajax/)
+
+### Testing/Display jQuery terminal:
+* [w3schools: jQuery getting Started](https://www.w3schools.com/jquery/jquery_get_started.asp),
+**|** [Tryit Editor: w3schools](https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_lib_google),
+**|** [Online Text Editor Display: Fiddle meta](https://jsfiddle.net/)
+**|** [JCubic: demo JQuery.Terminal](https://terminal.jcubic.pl/)

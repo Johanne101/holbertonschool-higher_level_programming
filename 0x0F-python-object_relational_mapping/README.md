@@ -58,18 +58,34 @@ session.close()
 
 2. How to connect to a MySQL database from a Python script
 ----------------------------------------------------------
-* [Connecting to a MySQL database](https://www.mikusa.com/python-mysql-docs/connection.html)
+***Connecting to a MySQL database***
+<p>
+The next step to using MySQL in your Python scripts is to make a connection to the database that you wish to use. All Python DB-API 2.0 modules implement a function `'module_name.connect'`. This is the function that is used to connect to the database, in our case MySQL.
 
-MySQLdb Package
+```
+db = MySQLdb.connect(host=MY_HOST, user=MY_USER, passwd=MY_PASS, db=MY_DB)
+```
+
+As you might guess this statement will connect me to the MySQL database located on `MY_HOST`, using user `MY_USER`, connecting with password `MY_PASS`, to database `MY_DB`. Note that the parameter for the password is 'passwd' not 'password'.
+
+As you execute this function the parameters are essentially passed to the underlying Python `extension _mysql`. This lets you pass many of the MySQL specific connection parameters through the normal connection method. For a complete listing of the supported connection parameters check out the reference section.
+</p>
+
+* [Connecting to a MySQL database](https://www.mikusa.com/python-mysql-docs/connection.html)
+* [How to connect MySQL db in python](https://pynative.com/python-mysql-database-connection/)
+***MySQLdb Package***
+<p>
 MySQLdb - A DB API v2.0 compatible interface to MySQL.
 
-This package is a wrapper around _mysql, which mostly implements the MySQL C API.
+This package is a wrapper around `_mysql`, which mostly implements the MySQL C API.
 
-connect() – connects to server
+`connect()` – connects to server
 
 See the C API specification and the MySQL documentation for more info on other items.
 
 For information on how MySQLdb handles type conversion, see the MySQLdb.converters module.
+</p>
+
 * [MySQLdb Package](https://mysqlclient.readthedocs.io/MySQLdb.html#MySQLdb.Connect)
 
 3. How to SELECT rows in a MySQL table from a Python script

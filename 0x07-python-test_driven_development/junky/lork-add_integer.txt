@@ -1,0 +1,87 @@
+============================
+DOCTEST for 0-add_integer.py
+============================
+""" How to test add_integer() functions """
+# python3 -m doctest -v ./test/0-add_integer.txt
+
+___________________________________________
+
+""" Importing the add_integer function """
+___________________________________________
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Regular Use
+===========
+
+<expecting 6>
+>>> add_integer(3, 3)
+6
+
+<expecting 102>
+>>> add_integer(4)
+102
+
+<expecting -6>
+>>> add_integer(-3, -3)
+-6
+
+TESTING FLOAT CAST TO INT:
+==========================
+<expecting 8>
+>>> add_integer(4.3, 4.2)
+8
+
+<expecting -20>
+>>> add_integer(-10.2, -10.4)
+-20
+
+<expecting 12>
+>>> add_integer(6.3, 6)
+12
+
+<expecting -9>
+>>> add_integer(-5.2, -4.1)
+-9
+
+<expecting -10>
+>>> add_integer(-5, -5.1)
+-10
+
+Edge Cases
+==========
+
+>>> add_integer(3e, 3):
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+>>> add_integer('a', 3)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(3, "str")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>> add_integer(none)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer( , 3)
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+>>> add_integer(None, 4)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(4, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer

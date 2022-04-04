@@ -1,10 +1,8 @@
 Tests 'matrix_divided'
 =======================
-""" How to test name_of_func() function """
-# python3 -m doctest -v ./test/x-file_test.txt
 
 ==========================================
-''' Importing MATRIX_DIVISION function''''
+''' Importing function''''
 ==========================================
 
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided

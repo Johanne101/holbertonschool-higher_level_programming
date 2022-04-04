@@ -2,7 +2,7 @@
 
 |**Why Python programming is awesome?!?!**|
 |:---------------------------------------:|
-| <p> The python language is one of the most accessible programming languages available because it has simplified syntax and is not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.</p>|
+|The python language is one of the most accessible programming languages available because it has simplified syntax and is not complicated, which gives more emphasis on natural language. Due to its ease of learning and usage, python codes can be easily written and executed much faster than other programming languages.|
 |![altext](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.yjwQfbn9z1-5dSF7mdZvRgAAAA%26pid%3DApi&f=1)|
 
 ### 0. What are lists and how to use them

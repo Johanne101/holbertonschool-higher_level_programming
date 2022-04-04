@@ -17,8 +17,8 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        if not list_dictionaries:
-            return "[]"
+        if list_dictionaries is None:
+            list_dictionaries= []
         return json.dumps(list_dictionaries)
 
     @staticmethod
@@ -29,40 +29,48 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        with open(cls.__name__ + ".json", 'w', encoding="utf-8") as file_js:
-            dic_list = []
-            if list_objs is None:
-                for objects in list_objs:
-                    dic_list.append(objects.to_dictionary())
+        cls_name = cls.__name__ + ".json"
+        dic_list = []
+        if list_objs is None:
+            for objects in list_objs:
+                dic_list.append(objects.to_dictionary(objects))
+                with open(cls_name, 'w', encoding="utf-8") as file_js:
                     file_js.write(cls.to_json_string(dic_list))
 
     @classmethod
     def create(cls, **dictionary):
         if cls.__name__ == "Square":
-            new_square = cls(1)
-            new_square.update(**dictionary)
+            cls_obj = cls(1)
+            cls_obj.update(**dictionary)
         if cls.__name__ == "Rectangle":
-            new_rectangle = cls(1, 1)
-            new_rectangle.update(**dictionary)
-        return(new_rectangle)
+            cls_obj = cls(1, 1)
+            cls_obj.update(**dictionary)
+        return cls_obj
 
     @classmethod
     def load_from_file(cls):
+        cls_name = cls.__name__ + ".json"
+        objs = []
+        if cls is None:
+            return newlist
         try:
-            with open(cls.__name__ + ".json", "r", encoding="utf-8") as a_file:
-                return [cls.create(**dict_o) for dict_o
-                        in cls.from_json_string(a_file.read())]
-        except IOError:
-            return []
+            with open(cls_name, "r", encoding="utf-8") as file_js:
+                objs_lst = cls.from_json_string(file_js.read())
+            for obj in range(len(objs_lst)):
+                objs_lst[obj] = cls.create(**objs_lst[obj]
+        """except Exception:
+        pass
+        """
+        return objs_lst
 
     """@classmethod
     def reset_nb_objects():
         Base._Base__nb_objects = 0
         """
 
-    @classmethod
+    '''@classmethod
     def save_to_file_csv(cls, list_objs):
-        '''saves list to CSV serialized file'''
+        ''saves list to CSV serialized file''
         if list_objs is None:
             with open(cls.__name__ + ".csv", 'w', encoding="utf-8") as file:
                 file.write("[]")
@@ -81,7 +89,7 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        '''Returns list of instances from csv file'''
+        ''Returns list of instances from csv file''
         try:
             with open(cls.__name__ + ".csv", 'r', encoding="utf-8") as j_file:
                 reader = csv.DictReader(j_file)
@@ -92,4 +100,4 @@ class Base:
                     list_objs.append((cls.create(**dic)))
                 return list_objs
         except IOError:
-            return []
+            return []'''
