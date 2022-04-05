@@ -1,6 +1,7 @@
 #!/usr/bin/node
+
 /*
- * Script returns value msg of 1st arg:
+ * Script prints 1st arg passed:
  * If no args print: “No argument”
  * Otherwise, return: Argument value
  */
