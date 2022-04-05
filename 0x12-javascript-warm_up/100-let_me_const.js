@@ -1,5 +1,5 @@
 #!/usr/bin/node
 /*
- * script to modifie value
+ * Script to modifie value
  */
 myVar = 333;
