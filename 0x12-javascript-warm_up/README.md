@@ -23,13 +23,13 @@ $ sudo npm install semistandard --global
 3. How to create variables and constants
 4. What are differences between `var`, `const` and `let`
 5. What are all the data types available in JavaScript
-6. How to use the if, if ... else statements
+6. How to use the `if`, `if ... else` statements
 7. How to use comments
 8. How to affect values to variables
-9. How to use while and for loops
-10. How to use break and continue statements
+9. How to use `while` and `for` loops
+10. How to use `break` and `continue` statements
 11. What is a function and how do you use functions
-12. What does a function that does not use any return statement return
+12. What does a function that does not use any `return` statement return
 13. Scope of variables
 14. What are the arithmetic operators and how to use them
 15. How to manipulate dictionary
@@ -50,18 +50,12 @@ JavaScript basics
 JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc.
 </p>
 
-|Javascrip Data Types|
-|:------------------:|
-|`String`|
-|`Array`|
-
-> # Tips:
-> Everything is `Object` and `Object` type in Javascript is powerful.
 
 4. What are and what are the differences bettween `let`, `const`, & `var`?
 ------------------------------------------------------------------------------
 
-|1 `let` |2 `const` |3 `var` |
+|**1.** `let` |**2.** `const` |**3.** `var` |
+|--------|----------|--------|
 |It’s the keyword to define a variable in the local scope|It’s the keyword to define a variable in the local scope|The scope of a var variable is functional scope.|
 |It’s the keyword to define a variable with optionally initializing it to a value|It’s the keyword to define a constant variable|It can be updated and re-declared into the scope.|
 |It’s the keyword to define a variable that can be re-assign during the execution|A user cannot update the const variable once it is declared.|It can be declared without initialization.|
@@ -70,12 +64,22 @@ JavaScript is a programming language that adds interactivity to your website. Th
 
 |Can it be declared without ***initializing***???| `var` | `let` | `const` |
 |:----------------|:----:|:----:|:----:|
-|Yes or No(x)|- [YES] | - [x] | - [x] |
+|Yes or No|YES|NO|NO|
 
 5. JavaScript data types
 ------------------------
 <p>
 </p>
+
+|Javascrip Data Types|YES | NO|
+|:------------------:|----|---|
+|`String`|**X**| - |
+|`Array`|**X**| - |
+|`Set`| - |**X**|
+|`Dictionary`| - |**X**|
+
+> # Tips:
+> Everything is `Object` and `Object` type in Javascript is powerful.
 
 
 6. if, if ... else statements
@@ -135,7 +139,7 @@ Resources
   - [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
   - [Object-oriented](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
   - [Object Prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
-* Intrinsic Objects
+* [Intrinsic Objects]()
 * [Module patterns](https://darrenderidder.github.io/talks/ModulePatterns/#/)
 * [var, let and const](https://www.youtube.com/watch?v=sjyJBL5fkp8)
 * [JavaScript Tutorial](https://www.youtube.com/watch?v=vZBCTc9zHtI)
