@@ -1,4 +1,8 @@
 #!/usr/bin/node
+/*
+ * Script replaces values
+ */
+
 const myObject = {
   type: 'object',
   value: 12
