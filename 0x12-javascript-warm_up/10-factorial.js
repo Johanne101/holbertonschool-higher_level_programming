@@ -1,4 +1,8 @@
 #!/usr/bin/node
+/*
+ * Script computes & prints a factorial
+ */
+
 const n = parseInt(process.argv[2]);
 function factorial (n) {
   if (n <= 1) {
