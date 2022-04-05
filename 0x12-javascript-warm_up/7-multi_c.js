@@ -1,5 +1,7 @@
 #!/usr/bin/node
-// script prints x times “C is fun”
+/*
+ * script prints x times “C is fun”
+ */
 
 let x = parseInt(process.argv[2]);
 
