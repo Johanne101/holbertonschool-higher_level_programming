@@ -11,12 +11,12 @@ module.exports = class Rectangle {
   }
 
   print () {
-    let stringLine = '';
-    for (let i = 0; i < this.width; i++) {
-      stringLine += 'X';
-    }
     for (let i = 0; i < this.height; i++) {
-      console.log(stringLine);
+      let sqr = '';
+      for (let j = 0; j < this.width; j++) {
+        sqr += 'X';
+      }
+      console.log(sqr);
     }
   }
 
