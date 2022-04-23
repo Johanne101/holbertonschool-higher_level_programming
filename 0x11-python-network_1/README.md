@@ -32,9 +32,41 @@ urllib.request mirrors this with a Request object which represents the HTTP requ
 </p>
 
 ## |How to decode| `urllib` body response
+
+```python3
+#!/usr/bin/python3
+""" Fetch's internet resources w/ the Python package urllib """
+import urllib.request
+
+with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
+   html = response.read()
+   print('Body response:')
+```
+
+### Response Headers
+
+
 ## |How to use| the Python package `requests`
 ## |How to make| HTTP `GET` request
 ## |How to make| HTTP `POST`/`PUT`/etc. request
+
+<p>
+Now, we have a Response object called r. We can get all the information we need from this object.
+
+Requests’ simple API means that all forms of HTTP request are as obvious. For example, this is how you make an HTTP POST request:
+```
+>>> r = requests.post('https://httpbin.org/post', data = {'key':'value'})
+```
+Nice, right? What about the other HTTP request types: PUT, DELETE, HEAD and OPTIONS? These are all just as simple:
+
+```
+>>> r = requests.put('https://httpbin.org/put', data = {'key':'value'})
+>>> r = requests.delete('https://httpbin.org/delete')
+>>> r = requests.head('https://httpbin.org/get')
+>>> r = requests.options('https://httpbin.org/get')
+```
+</p>
+
 ## |How to fetch| JSON resources
 ## |How to manipulate| data from an external service
 
@@ -46,4 +78,6 @@ urllib.request mirrors this with a Request object which represents the HTTP requ
 * [Requests package]()
 * [`get` python](https://docs.python.org/3.4/library/stdtypes.html#dict.get)
 * [Learning Objectives](https://fs.blog/feynman-learning-technique/)
-
+* [Basic Authentication](https://docs.github.com/en/rest/overview/other-authentication-methods)
+  * [personal access token as password](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+  * [GitHub API: Taking GitHub Credentials](https://docs.github.com/en/rest/users)
