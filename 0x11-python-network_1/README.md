@@ -17,8 +17,9 @@ Requirements
 
 ## Python package `urllib`
 <p>
+
 **How to fetch** internet resources with the Python package `urllib`
-The simplest way to use urllib.request is as follows:
+The simplest way to use `urllib.request` is as follows:
 
 ```python3
 import urllib.request
@@ -31,7 +32,7 @@ HTTP is based on requests and responses
 urllib.request mirrors this with a Request object which represents the HTTP request you are making.
 </p>
 
-## |How to decode| `urllib` body response
+## How to decode `urllib` body response
 
 ```python3
 #!/usr/bin/python3
@@ -46,9 +47,28 @@ with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
 ### Response Headers
 
 
-## |How to use| the Python package `requests`
-## |How to make| HTTP `GET` request
-## |How to make| HTTP `POST`/`PUT`/etc. request
+## How to use the Python package `requests`
+| How to make HTTP| Requests |
+|`GET` | ... |
+|`POST`/`PUT`/etc | ...|
+
+
+
+<p>
+
+Now, to make HTTP requests in python, we can use several HTTP libraries like:
+
+httplib
+urllib
+requests
+
+### Higher-level interface
+
+```python3
+urllib.urlopen(url[, data[, proxies[, context]]])
+```
+
+</p>
 
 <p>
 Now, we have a Response object called r. We can get all the information we need from this object.
@@ -57,7 +77,7 @@ Requests’ simple API means that all forms of HTTP request are as obvious. For 
 ```
 >>> r = requests.post('https://httpbin.org/post', data = {'key':'value'})
 ```
-Nice, right? What about the other HTTP request types: PUT, DELETE, HEAD and OPTIONS? These are all just as simple:
+Nice, right? What about the other HTTP request types: **PUT, DELETE, HEAD and OPTIONS**? These are all just as simple:
 
 ```
 >>> r = requests.put('https://httpbin.org/put', data = {'key':'value'})
@@ -67,8 +87,8 @@ Nice, right? What about the other HTTP request types: PUT, DELETE, HEAD and OPTI
 ```
 </p>
 
-## |How to fetch| JSON resources
-## |How to manipulate| data from an external service
+## How to fetch JSON resources
+## How to manipulate data from an external service
 
 # Resources
 ***Read or watch:***
@@ -76,7 +96,9 @@ Nice, right? What about the other HTTP request types: PUT, DELETE, HEAD and OPTI
 * [Quickstart with Requests package: PYTHON3](https://docs.python.org/3/howto/urllib2.html)
   * [Error Codes](https://docs.python.org/3/howto/urllib2.html#error-codes)
 * [Requests package]()
+* [Higher-level interface: `urllib`](https://docs.python.org/2/library/urllib.html#high-level-interface)
 * [`get` python](https://docs.python.org/3.4/library/stdtypes.html#dict.get)
+* [Get & Post requests: Geek for geeks](https://www.geeksforgeeks.org/get-post-requests-using-python/)
 * [Learning Objectives](https://fs.blog/feynman-learning-technique/)
 * [Basic Authentication](https://docs.github.com/en/rest/overview/other-authentication-methods)
   * [personal access token as password](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
