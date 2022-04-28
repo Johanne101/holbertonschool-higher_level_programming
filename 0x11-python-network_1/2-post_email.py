@@ -4,7 +4,7 @@ script takes URL,& email,
 sends post request
 displays body of the response
 (decoded in utf-8)
-"""]
+"""
 import sys
 import urllib.parse
 import urllib.request
