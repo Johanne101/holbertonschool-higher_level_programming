@@ -5,17 +5,16 @@ sends post request
 displays body of the response
 (decoded in utf-8)
 """
-import sys
-import urllib.parse
+from sys import argv
 import urllib.request
+import urllib.parse
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    email = {'email': sys.argv[2]}
+    url = argv[1]
+    email = {'email': argv[2]}
     data = urllib.parse.urlencode(email)
-    data = data.encode('ascii')  # data should be bytes
-    req = urllib.request.Request(url, data)
-    with urllib.request.urlopen(req) as response:
+    data = data.encode('utf8')  # data changed
+    with urllib.request.urlopen(url, data) as response:
         the_page = response.read()
         print(the_page.decode("utf-8"))
