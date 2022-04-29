@@ -99,6 +99,9 @@ Nice, right? What about the other HTTP request types: **PUT, DELETE, HEAD and OP
 * [Higher-level interface: `urllib`](https://docs.python.org/2/library/urllib.html#high-level-interface)
 * [`get` python](https://docs.python.org/3.4/library/stdtypes.html#dict.get)
 * [Get & Post requests: Geek for geeks](https://www.geeksforgeeks.org/get-post-requests-using-python/)
+* **URLLIB**;
+  * [`urllib.error.HTTPError`: examples](https://www.programcreek.com/python/example/68438/urllib.error.HTTPError)
+
 * [Learning Objectives](https://fs.blog/feynman-learning-technique/)
 * [Basic Authentication](https://docs.github.com/en/rest/overview/other-authentication-methods)
   * [personal access token as password](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
