@@ -23,7 +23,9 @@ $ export NODE_PATH=/usr/lib/node_modules
 
 # Resources
 ***Read or watch:***
-* [Javascript: Program to read text File](https://www.geeksforgeeks.org/javascript-program-to-read-text-file/)
+* **Javascript:**
+  * [Program to read text File](https://www.geeksforgeeks.org/javascript-program-to-read-text-file/)
+  * [Program to write data in a text File](https://www.geeksforgeeks.org/javascript-program-to-write-data-in-a-text-file/)
 * Working with JSON data
 * The workflow of accessing the attributes of a simply-created JSON object by Jimmy Tran from Cohort 1 - San Francisco
 * axios module
@@ -56,3 +58,5 @@ readFile( Path, Options, Callback)
   * **Callback Function:** It is the callback function which has further two arguments (err, data). If the operation fails to extract the data, err shows what is the fault, else data argument will contain the data from the file.
 </p>
 
+1. How to write a script that writes a string to a file.
+  + [Program to write data in a text File](https://www.geeksforgeeks.org/javascript-program-to-write-data-in-a-text-file/)
