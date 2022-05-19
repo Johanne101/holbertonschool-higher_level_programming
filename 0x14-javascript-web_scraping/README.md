@@ -26,10 +26,10 @@ $ export NODE_PATH=/usr/lib/node_modules
 * **Javascript:**
   * [Program to read text File](https://www.geeksforgeeks.org/javascript-program-to-read-text-file/)
   * [Program to write data in a text File](https://www.geeksforgeeks.org/javascript-program-to-write-data-in-a-text-file/)
-* Working with JSON data
-* The workflow of accessing the attributes of a simply-created JSON object by Jimmy Tran from Cohort 1 - San Francisco
-* axios module
-* Modern JS
+* [Working with JSON data](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+* [The workflow of accessing the attributes of a simply-created JSON object by Jimmy Tran from Cohort 1 - San Francisco](https://medium.com/@vietkieutie/the-workflow-of-accessing-the-attributes-of-a-simply-created-json-object-82a5b33e2319)
+* [axios module](https://github.com/axios/axios)
+* [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 
 General Objectives
 ---
